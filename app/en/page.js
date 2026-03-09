@@ -474,7 +474,22 @@ export default function NorthernStudioSite() {
               </a>
             </nav>
 
-            <div className="hidden md:block">
+            <div className="hidden items-center gap-3 md:flex">
+              <div className="flex items-center gap-1 rounded-full border border-white/10 bg-white/5 p-1">
+                <Link
+                  href="/"
+                  className="rounded-full px-3 py-1 text-xs font-medium text-white/70 transition hover:bg-white/10 hover:text-white"
+                >
+                  NL
+                </Link>
+                <Link
+                  href="/en"
+                  className="rounded-full bg-white px-3 py-1 text-xs font-medium text-neutral-950"
+                >
+                  ENG
+                </Link>
+              </div>
+
               <a
                 href="#contact"
                 className="rounded-full border border-white/15 bg-white px-4 py-2 text-sm font-medium text-neutral-950 transition hover:scale-[1.02] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
@@ -517,6 +532,20 @@ export default function NorthernStudioSite() {
                     {label}
                   </a>
                 ))}
+                <div className="mt-2 flex items-center gap-2 px-3 py-2">
+                  <Link
+                    href="/"
+                    className="rounded-full border border-white/10 px-3 py-1 text-xs font-medium text-white/70"
+                  >
+                    NL
+                  </Link>
+                  <Link
+                    href="/en"
+                    className="rounded-full bg-white px-3 py-1 text-xs font-medium text-neutral-950"
+                  >
+                    ENG
+                  </Link>
+                </div>
               </div>
             </div>
           )}
@@ -1047,11 +1076,11 @@ export default function NorthernStudioSite() {
                       </button>
                       <p className="text-xs leading-6 text-white/45">
                         By contacting Northern Studio, you agree to be contacted back regarding your enquiry. See our{" "}
-                        <Link href="/privacy-policy" className="underline underline-offset-4 hover:text-white">
+                        <Link href="/en/privacy-policy" className="underline underline-offset-4 hover:text-white">
                           Privacy Policy
                         </Link>{" "}
                         and{" "}
-                        <Link href="/terms" className="underline underline-offset-4 hover:text-white">
+                        <Link href="/en/terms" className="underline underline-offset-4 hover:text-white">
                           Terms
                         </Link>
                         .
@@ -1096,13 +1125,13 @@ export default function NorthernStudioSite() {
                   Contact
                 </a>
                 <Link
-                  href="/privacy-policy"
+                  href="/en/privacy-policy"
                   className="inline-flex items-center gap-2 transition hover:text-white"
                 >
                   <FileText className="h-4 w-4" /> Privacy Policy
                 </Link>
                 <Link
-                  href="/terms"
+                  href="/en/terms"
                   className="inline-flex items-center gap-2 transition hover:text-white"
                 >
                   <FileText className="h-4 w-4" /> Terms
