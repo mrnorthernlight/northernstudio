@@ -386,6 +386,8 @@ export default function NorthernStudioSite() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState(0);
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
   const [errors, setErrors] = useState({});
   const [form, setForm] = useState({
     name: "",
@@ -417,10 +419,47 @@ export default function NorthernStudioSite() {
     return Object.keys(nextErrors).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!validate()) return;
-    setSubmitted(true);
+
+    setSubmitting(true);
+    setSubmitError("");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          company: form.company,
+          details: form.details,
+          locale: "en",
+        }),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result?.error || "Sending failed.");
+      }
+
+      setSubmitted(true);
+      setForm({
+        name: "",
+        email: "",
+        company: "",
+        details: "",
+      });
+    } catch (error) {
+      console.error("Form error:", error);
+      setSubmitError(error.message || "Something went wrong while sending. Please try again.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const handleChange = (field, value) => {
@@ -1001,6 +1040,11 @@ export default function NorthernStudioSite() {
                 <div className="rounded-[1.75rem] border border-white/10 bg-black/20 p-5">
                   {!submitted ? (
                     <form onSubmit={handleSubmit} noValidate className="space-y-4" aria-label="Project enquiry form">
+                      {submitError && (
+                        <div className="rounded-2xl border border-amber-400/20 bg-amber-400/10 px-4 py-3 text-sm text-amber-100">
+                          {submitError}
+                        </div>
+                      )}
                       <div>
                         <label htmlFor="name" className="mb-2 block text-sm text-white/65">
                           Name
@@ -1070,9 +1114,10 @@ export default function NorthernStudioSite() {
                       </div>
                       <button
                         type="submit"
-                        className="inline-flex w-full items-center justify-center rounded-full bg-white px-5 py-3.5 text-sm font-medium text-neutral-950 transition hover:scale-[1.01] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
+                        disabled={submitting}
+                        className="inline-flex w-full items-center justify-center rounded-full bg-white px-5 py-3.5 text-sm font-medium text-neutral-950 transition hover:scale-[1.01] disabled:cursor-not-allowed disabled:opacity-70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
                       >
-                        Send project request
+                        {submitting ? "Sending..." : "Send project request"}
                       </button>
                       <p className="text-xs leading-6 text-white/45">
                         By contacting Northern Studio, you agree to be contacted back regarding your enquiry. See our{" "}
@@ -1088,10 +1133,9 @@ export default function NorthernStudioSite() {
                     </form>
                   ) : (
                     <div className="rounded-[1.5rem] border border-emerald-400/20 bg-emerald-400/10 p-6 text-emerald-100">
-                      <div className="text-lg font-medium">Project request captured.</div>
+                      <div className="text-lg font-medium">Project request sent.</div>
                       <p className="mt-2 text-sm leading-7 text-emerald-50/85">
-                        The interface flow is working. In production, this form should connect to
-                        email, Formspree, Resend, or a CRM so your leads do not vanish into the digital bog.
+                        Thank you. Your message has been sent to info@northernstudio.be. We'll get back to you as soon as possible.
                       </p>
                     </div>
                   )}

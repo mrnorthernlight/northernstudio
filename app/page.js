@@ -386,6 +386,8 @@ export default function NorthernStudioSite() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState(0);
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
   const [errors, setErrors] = useState({});
   const [form, setForm] = useState({
     name: "",
@@ -417,10 +419,47 @@ export default function NorthernStudioSite() {
     return Object.keys(nextErrors).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!validate()) return;
-    setSubmitted(true);
+
+    setSubmitting(true);
+    setSubmitError("");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          company: form.company,
+          details: form.details,
+          locale: "nl",
+        }),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result?.error || "Verzenden mislukt.");
+      }
+
+      setSubmitted(true);
+      setForm({
+        name: "",
+        email: "",
+        company: "",
+        details: "",
+      });
+    } catch (error) {
+      console.error("Form error:", error);
+      setSubmitError(error.message || "Er liep iets mis bij het verzenden. Probeer opnieuw.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const handleChange = (field, value) => {
@@ -996,6 +1035,11 @@ export default function NorthernStudioSite() {
                 <div className="rounded-[1.75rem] border border-white/10 bg-black/20 p-5">
                   {!submitted ? (
                     <form onSubmit={handleSubmit} noValidate className="space-y-4" aria-label="Projectaanvraagformulier">
+                      {submitError && (
+                        <div className="rounded-2xl border border-amber-400/20 bg-amber-400/10 px-4 py-3 text-sm text-amber-100">
+                          {submitError}
+                        </div>
+                      )}
                       <div>
                         <label htmlFor="name" className="mb-2 block text-sm text-white/65">
                           Naam
@@ -1069,9 +1113,10 @@ export default function NorthernStudioSite() {
                       </div>
                       <button
                         type="submit"
-                        className="inline-flex w-full items-center justify-center rounded-full bg-white px-5 py-3.5 text-sm font-medium text-neutral-950 transition hover:scale-[1.01] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
+                        disabled={submitting}
+                        className="inline-flex w-full items-center justify-center rounded-full bg-white px-5 py-3.5 text-sm font-medium text-neutral-950 transition hover:scale-[1.01] disabled:cursor-not-allowed disabled:opacity-70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
                       >
-                        Verstuur projectaanvraag
+                        {submitting ? "Bezig met verzenden..." : "Verstuur projectaanvraag"}
                       </button>
                       <p className="text-xs leading-6 text-white/45">
                         Door contact op te nemen met Northern Studio ga je ermee akkoord dat we je mogen contacteren over je aanvraag. Bekijk ons{" "}
@@ -1087,9 +1132,9 @@ export default function NorthernStudioSite() {
                     </form>
                   ) : (
                     <div className="rounded-[1.5rem] border border-emerald-400/20 bg-emerald-400/10 p-6 text-emerald-100">
-                      <div className="text-lg font-medium">Projectaanvraag ontvangen.</div>
+                      <div className="text-lg font-medium">Projectaanvraag verzonden.</div>
                       <p className="mt-2 text-sm leading-7 text-emerald-50/85">
-                        De interfaceflow werkt. In productie moet dit formulier gekoppeld worden aan e-mail, Formspree, Resend of een CRM zodat je leads niet verdwijnen in het digitale moeras.
+                        Bedankt. Je bericht is doorgestuurd naar info@northernstudio.be. We reageren zo snel mogelijk.
                       </p>
                     </div>
                   )}
