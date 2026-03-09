@@ -259,126 +259,126 @@ const DeviceStack = () => (
 const services = [
   {
     icon: <PenTool className="h-5 w-5" />,
-    title: "Custom UI & Brand Presence",
-    text: "Bespoke websites that feel intentional, premium, and memorable instead of looking like a mildly refurbished template carcass.",
+    title: "Custom UI & merkuitstraling",
+    text: "Websites op maat die bewust, premium en memorabel aanvoelen in plaats van als een half opgefrist templateskelet.",
   },
   {
     icon: <MonitorSmartphone className="h-5 w-5" />,
-    title: "Responsive Front-End Development",
-    text: "Desktop, tablet, and mobile layouts built as one coherent system so the experience feels sharp on every screen size.",
+    title: "Responsieve front-end development",
+    text: "Desktop-, tablet- en mobiele layouts gebouwd als één samenhangend systeem zodat de ervaring scherp aanvoelt op elk scherm.",
   },
   {
     icon: <Gauge className="h-5 w-5" />,
-    title: "Conversion-Focused Structure",
-    text: "Messaging, trust signals, section order, and calls-to-action designed to increase confidence and generate enquiries.",
+    title: "Structuur gericht op conversie",
+    text: "Boodschap, vertrouwenssignalen, volgorde van secties en calls-to-action ontworpen om vertrouwen te verhogen en meer aanvragen te genereren.",
   },
   {
     icon: <Shield className="h-5 w-5" />,
-    title: "Professional Revamps",
-    text: "Outdated websites rebuilt into modern assets that support higher pricing, stronger trust, and better first impressions.",
+    title: "Professionele redesigns",
+    text: "Verouderde websites herbouwd tot moderne assets die hogere prijzen, sterker vertrouwen en betere eerste indrukken ondersteunen.",
   },
 ];
 
 const caseStudies = [
   {
-    title: "Consultant Authority Site",
-    type: "Personal brand / lead generation",
-    result: "Sharper positioning and more qualified enquiries",
-    text: "A premium one-person business site built to make specialist expertise feel established, expensive, and easy to trust.",
+    title: "Authority-site voor consultant",
+    type: "Personal brand / leadgeneratie",
+    result: "Sterkere positionering en meer gekwalificeerde aanvragen",
+    text: "Een premium website voor een solo-ondernemer, ontworpen om gespecialiseerde expertise gevestigd, waardevol en betrouwbaar te laten aanvoelen.",
   },
   {
-    title: "Service Business Redesign",
-    type: "Local company / credibility upgrade",
-    result: "A stronger first impression across desktop and mobile",
-    text: "A full redesign for a company with a dated web presence that was quietly losing trust before the first contact even happened.",
+    title: "Redesign voor servicebedrijf",
+    type: "Lokaal bedrijf / geloofwaardigheidsupgrade",
+    result: "Sterkere eerste indruk op desktop en mobiel",
+    text: "Een volledige redesign voor een bedrijf met een verouderde online aanwezigheid die stiekem vertrouwen verloor nog voor het eerste contactmoment.",
   },
   {
-    title: "Studio Launch Website",
-    type: "Creative business / positioning",
-    result: "Distinct visual identity and premium service framing",
-    text: "A launch site designed to attract better clients by showing strong taste, clarity, and a more refined digital presence.",
+    title: "Launch website voor studio",
+    type: "Creatief bedrijf / positionering",
+    result: "Duidelijke visuele identiteit en premium framing van diensten",
+    text: "Een launch-site ontworpen om betere klanten aan te trekken door sterke smaak, helderheid en een verfijndere digitale aanwezigheid te tonen.",
   },
 ];
 
 const process = [
   [
     "01",
-    "Discovery",
-    "We define your offer, audience, pages, and the practical business goal of the site so the project has a spine.",
+    "Ontdekking",
+    "We bepalen je aanbod, doelgroep, pagina’s en het praktische bedrijfsdoel van de site zodat het project een degelijke ruggengraat heeft.",
   ],
   [
     "02",
-    "Direction",
-    "We shape the design language, page hierarchy, tone, and interface decisions before the build starts sprinting into the woods.",
+    "Richting",
+    "We vormen de designrichting, paginahierarchie, tone of voice en interfacekeuzes voordat de build het bos in sprint.",
   ],
   [
     "03",
     "Build",
-    "The website is developed with responsive layouts, polished sections, accessibility-minded structure, and production-ready components.",
+    "De website wordt gebouwd met responsieve layouts, verfijnde secties, toegankelijke structuur en productieklare componenten.",
   ],
   [
     "04",
-    "Refine & Launch",
-    "We test, improve, and prepare the site for deployment so it behaves like a real business asset rather than a decorative object.",
+    "Verfijnen & lanceren",
+    "We testen, verbeteren en bereiden de site voor op livegang zodat hij zich gedraagt als een echt bedrijfsasset in plaats van een decoratief object.",
   ],
 ];
 
 const pricing = [
   {
     name: "Signature",
-    price: "from €2.5k",
-    text: "For individuals and smaller businesses that need a premium web presence without a huge footprint.",
-    bullets: ["Custom homepage", "Responsive design", "Core sections", "Contact conversion flow"],
+    price: "vanaf €2.5k",
+    text: "Voor individuen en kleinere bedrijven die een premium online uitstraling nodig hebben zonder enorme scope.",
+    bullets: ["Custom homepage", "Responsief design", "Kernsecties", "Contactflow gericht op conversie"],
   },
   {
     name: "Professional",
-    price: "from €5k",
-    text: "For established professionals and growing businesses that need stronger positioning, more depth, and sharper design.",
-    bullets: ["Multi-page website", "Advanced visual system", "Custom section architecture", "Testing and refinement"],
+    price: "vanaf €5k",
+    text: "Voor gevestigde professionals en groeiende bedrijven die sterkere positionering, meer diepgang en scherper design nodig hebben.",
+    bullets: ["Website met meerdere pagina’s", "Geavanceerd visueel systeem", "Custom sectie-architectuur", "Testing en verfijning"],
     featured: true,
   },
   {
     name: "Flagship",
     price: "€10k+",
-    text: "For brands and companies that want a high-end website with premium storytelling, custom UI, and stronger perceived value.",
-    bullets: ["High-end custom UI", "Rich page systems", "Launch-ready handoff", "Priority refinement"],
+    text: "Voor merken en bedrijven die een high-end website willen met premium storytelling, custom UI en meer gepercipieerde waarde.",
+    bullets: ["High-end custom UI", "Rijke paginasystemen", "Launch-ready oplevering", "Prioritaire verfijning"],
   },
 ];
 
 const testimonials = [
   {
-    quote: "The site made us look like a more serious company overnight. The conversations changed immediately.",
+    quote: "De site zorgde ervoor dat we er van de ene dag op de andere veel serieuzer uitzagen. De gesprekken veranderden meteen.",
     name: "Adrian Vale",
     role: "Consultant",
   },
   {
-    quote: "Clean, premium, and much more persuasive than what we had before. It finally matched the quality of our service.",
+    quote: "Strak, premium en veel overtuigender dan wat we voordien hadden. Het paste eindelijk bij de kwaliteit van onze service.",
     name: "Lena Mercier",
-    role: "Interior Studio Founder",
+    role: "Founder interieurstudio",
   },
   {
-    quote: "A redesign with actual taste and structure. It looked modern without becoming shiny nonsense.",
+    quote: "Een redesign met echte smaak en structuur. Modern zonder glanzende onzin te worden.",
     name: "Jonas Verbeek",
-    role: "Business Owner",
+    role: "Zaakvoerder",
   },
 ];
 
 const faqs = [
   [
-    "Who is this for?",
-    "Professionals, service businesses, consultants, creatives, and companies that need a sharper digital presence and better first impression.",
+    "Voor wie is dit bedoeld?",
+    "Voor professionals, servicebedrijven, consultants, creatieven en ondernemingen die een scherpere digitale aanwezigheid en sterkere eerste indruk nodig hebben.",
   ],
   [
-    "Do you redesign existing websites?",
-    "Yes. Redesigning outdated websites into modern, premium, higher-trust experiences is one of the main use cases.",
+    "Redesign je ook bestaande websites?",
+    "Ja. Verouderde websites ombouwen tot moderne, premium ervaringen met meer vertrouwen is één van de belangrijkste toepassingen.",
   ],
   [
-    "Can this go live on my own domain?",
-    "Yes. Once hosting and domain settings are connected, the finished site can be deployed under your domain and refined after launch.",
+    "Kan dit live op mijn eigen domein?",
+    "Ja. Zodra hosting en domeininstellingen gekoppeld zijn, kan de afgewerkte site op jouw domein worden gelanceerd en nadien verder verfijnd worden.",
   ],
   [
-    "Is the build custom or template-based?",
-    "Custom. The structure, visual language, and positioning are designed around the business rather than shoved into a pre-chewed theme.",
+    "Is dit maatwerk of template-gebaseerd?",
+    "Maatwerk. Structuur, visuele taal en positionering worden ontworpen rond het bedrijf, niet in een voorgekauwde theme gepropt.",
   ],
 ];
 
@@ -396,23 +396,23 @@ export default function NorthernStudioSite() {
 
   const credibility = useMemo(
     () => [
-      "Premium custom websites",
-      "Built for professionals and businesses",
-      "Responsive, accessible, modern",
-      "Positioned to generate trust and leads",
+      "Premium websites op maat",
+      "Gebouwd voor professionals en bedrijven",
+      "Responsief, toegankelijk, modern",
+      "Gepositioneerd om vertrouwen en leads te genereren",
     ],
     []
   );
 
   const validate = () => {
     const nextErrors = {};
-    if (!form.name.trim()) nextErrors.name = "Please enter your name.";
+    if (!form.name.trim()) nextErrors.name = "Gelieve je naam in te vullen.";
     if (!form.email.trim()) {
-      nextErrors.email = "Please enter your email.";
+      nextErrors.email = "Gelieve je e-mailadres in te vullen.";
     } else if (!/^\S+@\S+\.\S+$/.test(form.email)) {
-      nextErrors.email = "Please enter a valid email address.";
+      nextErrors.email = "Gelieve een geldig e-mailadres in te vullen.";
     }
-    if (!form.details.trim()) nextErrors.details = "Please add a few project details.";
+    if (!form.details.trim()) nextErrors.details = "Geef een paar projectdetails mee.";
     setErrors(nextErrors);
     return Object.keys(nextErrors).length === 0;
   };
@@ -434,7 +434,7 @@ export default function NorthernStudioSite() {
         href="#main-content"
         className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-neutral-950"
       >
-        Skip to content
+        Ga naar inhoud
       </a>
 
       <div className="fixed inset-0 -z-10 overflow-hidden" aria-hidden="true">
@@ -456,30 +456,45 @@ export default function NorthernStudioSite() {
               <BrandMark />
             </a>
 
-            <nav className="hidden items-center gap-8 text-sm text-white/60 md:flex" aria-label="Primary">
+            <nav className="hidden items-center gap-8 text-sm text-white/60 md:flex" aria-label="Hoofdnavigatie">
               <a href="#services" className="transition hover:text-white focus-visible:text-white">
-                Services
+                Diensten
               </a>
               <a href="#work" className="transition hover:text-white focus-visible:text-white">
-                Work
+                Werk
               </a>
               <a href="#process" className="transition hover:text-white focus-visible:text-white">
-                Process
+                Proces
               </a>
               <a href="#pricing" className="transition hover:text-white focus-visible:text-white">
-                Pricing
+                Prijzen
               </a>
               <a href="#contact" className="transition hover:text-white focus-visible:text-white">
                 Contact
               </a>
             </nav>
 
-            <div className="hidden md:block">
+            <div className="hidden items-center gap-3 md:flex">
+              <div className="flex items-center gap-1 rounded-full border border-white/10 bg-white/5 p-1">
+                <Link
+                  href="/"
+                  className="rounded-full bg-white px-3 py-1 text-xs font-medium text-neutral-950"
+                >
+                  NL
+                </Link>
+                <Link
+                  href="/en"
+                  className="rounded-full px-3 py-1 text-xs font-medium text-white/70 transition hover:bg-white/10 hover:text-white"
+                >
+                  ENG
+                </Link>
+              </div>
+
               <a
                 href="#contact"
                 className="rounded-full border border-white/15 bg-white px-4 py-2 text-sm font-medium text-neutral-950 transition hover:scale-[1.02] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
               >
-                Start your project
+                Start je project
               </a>
             </div>
 
@@ -487,7 +502,7 @@ export default function NorthernStudioSite() {
               type="button"
               className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 md:hidden"
               onClick={() => setMobileOpen((v) => !v)}
-              aria-label="Toggle menu"
+              aria-label="Menu openen"
               aria-expanded={mobileOpen}
               aria-controls="mobile-menu"
             >
@@ -502,10 +517,10 @@ export default function NorthernStudioSite() {
             >
               <div className="grid gap-2 text-sm text-white/75">
                 {[
-                  ["#services", "Services"],
-                  ["#work", "Work"],
-                  ["#process", "Process"],
-                  ["#pricing", "Pricing"],
+                  ["#services", "Diensten"],
+                  ["#work", "Werk"],
+                  ["#process", "Proces"],
+                  ["#pricing", "Prijzen"],
                   ["#contact", "Contact"],
                 ].map(([href, label]) => (
                   <a
@@ -517,6 +532,17 @@ export default function NorthernStudioSite() {
                     {label}
                   </a>
                 ))}
+                <div className="mt-2 flex items-center gap-2 px-3 py-2">
+                  <Link href="/" className="rounded-full bg-white px-3 py-1 text-xs font-medium text-neutral-950">
+                    NL
+                  </Link>
+                  <Link
+                    href="/en"
+                    className="rounded-full border border-white/10 px-3 py-1 text-xs font-medium text-white/70"
+                  >
+                    ENG
+                  </Link>
+                </div>
               </div>
             </div>
           )}
@@ -537,8 +563,7 @@ export default function NorthernStudioSite() {
                 transition={{ duration: 0.55 }}
                 className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.28em] text-white/60 backdrop-blur-xl"
               >
-                <Sparkles className="h-3.5 w-3.5" /> premium web design · custom development ·
-                strategic revamps
+                <Sparkles className="h-3.5 w-3.5" /> premium webdesign · custom development · strategische revamps
               </motion.div>
 
               <motion.h1
@@ -547,11 +572,11 @@ export default function NorthernStudioSite() {
                 transition={{ duration: 0.65, delay: 0.05 }}
                 className="max-w-5xl text-5xl font-semibold leading-[0.94] tracking-[-0.055em] text-white sm:text-6xl lg:text-[5.5rem]"
               >
-                Websites that{" "}
+                Websites die{" "}
                 <span className="bg-[linear-gradient(135deg,#67e8f9_0%,#ffffff_32%,#c084fc_68%,#fbbf24_100%)] bg-clip-text text-transparent">
-                  command attention
+                  aandacht opeisen
                 </span>{" "}
-                and make your business feel worth hiring.
+                en je bedrijf laten aanvoelen alsof het de moeite waard is om in te huren.
               </motion.h1>
 
               <motion.p
@@ -560,9 +585,7 @@ export default function NorthernStudioSite() {
                 transition={{ duration: 0.72, delay: 0.12 }}
                 className="mt-8 max-w-2xl text-lg leading-8 text-white/72 sm:text-xl"
               >
-                Northern Studio builds custom websites for professionals, personal brands, and
-                companies that want a stronger first impression, clearer positioning, and a digital
-                presence with actual gravity.
+                Northern Studio bouwt websites op maat voor professionals, personal brands en bedrijven die een sterkere eerste indruk, helderdere positionering en een digitale aanwezigheid met echte zwaartekracht willen.
               </motion.p>
 
               <motion.div
@@ -575,14 +598,14 @@ export default function NorthernStudioSite() {
                   href="#contact"
                   className="group inline-flex items-center justify-center rounded-full border border-white/10 bg-white px-6 py-3.5 text-sm font-medium text-neutral-950 transition hover:scale-[1.02] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
                 >
-                  Book your website{" "}
+                  Boek je website{" "}
                   <ArrowUpRight className="ml-2 h-4 w-4 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </a>
                 <a
                   href="#work"
                   className="inline-flex items-center justify-center rounded-full border border-white/10 bg-white/5 px-6 py-3.5 text-sm font-medium text-white backdrop-blur-xl transition hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
                 >
-                  View example work
+                  Bekijk voorbeeldwerk
                 </a>
               </motion.div>
 
@@ -617,9 +640,9 @@ export default function NorthernStudioSite() {
               <div className="relative overflow-hidden rounded-[2.2rem] border border-white/10 bg-white/8 p-5 shadow-[0_0_0_1px_rgba(255,255,255,0.04),0_30px_100px_rgba(0,0,0,0.45)] backdrop-blur-2xl">
                 <div className="mb-4 flex items-center justify-between gap-4 rounded-[1.4rem] border border-white/10 bg-black/20 px-4 py-3">
                   <div>
-                    <div className="text-sm font-medium text-white">High-end business website system</div>
+                    <div className="text-sm font-medium text-white">High-end websitesysteem voor bedrijven</div>
                     <div className="text-xs uppercase tracking-[0.24em] text-white/40">
-                      desktop · mobile · conversion-led
+                      desktop · mobiel · conversiegericht
                     </div>
                   </div>
                   <div className="rounded-full border border-emerald-400/20 bg-emerald-400/10 px-3 py-1 text-xs text-emerald-200">
@@ -632,21 +655,20 @@ export default function NorthernStudioSite() {
           </section>
 
           <section className="grid gap-4 border-y border-white/10 py-8 text-sm text-white/55 md:grid-cols-4">
-            <p className="uppercase tracking-[0.3em]">what we do</p>
-            <p>Build premium websites</p>
-            <p>Revamp outdated ones</p>
-            <p>Help businesses look sharper</p>
+            <p className="uppercase tracking-[0.3em]">wat we doen</p>
+            <p>Premium websites bouwen</p>
+            <p>Verouderde websites redesignen</p>
+            <p>Bedrijven online scherper laten ogen</p>
           </section>
 
           <section id="services" className="py-24">
             <div className="max-w-3xl">
-              <p className="text-sm uppercase tracking-[0.28em] text-white/45">Services</p>
+              <p className="text-sm uppercase tracking-[0.28em] text-white/45">Diensten</p>
               <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] sm:text-5xl">
-                Websites designed to sell your credibility before you even speak.
+                Websites die je geloofwaardigheid verkopen nog voor je zelf iets zegt.
               </h2>
               <p className="mt-6 text-lg leading-8 text-white/65">
-                This is not about merely having a website. It is about looking established,
-                trustworthy, and professionally expensive in a way that helps people choose you.
+                Dit gaat niet gewoon over een website hebben. Het gaat erom gevestigd, betrouwbaar en professioneel waardevol over te komen op een manier die mensen helpt om voor jou te kiezen.
               </p>
             </div>
 
@@ -671,7 +693,9 @@ export default function NorthernStudioSite() {
                     <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-black/25 text-lg shadow-[0_10px_25px_rgba(0,0,0,0.25)]">
                       {service.icon}
                     </div>
-                    <h3 className="text-xl font-medium tracking-[-0.03em] text-white">{service.title}</h3>
+                    <h3 className="text-xl font-medium tracking-[-0.03em] text-white">
+                      {service.title}
+                    </h3>
                     <p className="mt-4 text-sm leading-7 text-white/72">{service.text}</p>
                   </div>
                 </motion.article>
@@ -685,18 +709,17 @@ export default function NorthernStudioSite() {
                 <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                   <div>
                     <div className="text-xs uppercase tracking-[0.28em] text-white/45">
-                      First impression matters
+                      Eerste indruk telt
                     </div>
                     <div className="mt-1 text-lg font-medium text-white">
-                      Most visitors decide how credible you are in seconds. Your website should hit
-                      harder than that.
+                      De meeste bezoekers beslissen binnen enkele seconden hoe geloofwaardig je bent. Je website moet harder binnenkomen dan dat.
                     </div>
                   </div>
                   <a
                     href="#contact"
                     className="inline-flex items-center justify-center rounded-full border border-white/10 bg-white px-5 py-3 text-sm font-medium text-neutral-950 transition hover:scale-[1.02] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
                   >
-                    Make mine stand out
+                    Laat de mijne opvallen
                   </a>
                 </div>
               </div>
@@ -705,13 +728,12 @@ export default function NorthernStudioSite() {
 
           <section id="work" className="py-24">
             <div className="max-w-3xl">
-              <p className="text-sm uppercase tracking-[0.28em] text-white/45">Example work</p>
+              <p className="text-sm uppercase tracking-[0.28em] text-white/45">Voorbeeldwerk</p>
               <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] sm:text-5xl">
-                Concept case studies built to feel commercially real.
+                Concept case studies die commercieel echt aanvoelen.
               </h2>
               <p className="mt-6 text-lg leading-8 text-white/65">
-                Until the first live client projects land, strong concept work carries the proof
-                burden. The trick is making it look grounded instead of imaginary fairy dust.
+                Tot de eerste live klantprojecten gelanceerd zijn, draagt sterk conceptwerk de bewijslast. De truc is dat het gegrond aanvoelt in plaats van als denkbeeldig feeënstof.
               </p>
             </div>
 
@@ -728,14 +750,16 @@ export default function NorthernStudioSite() {
                     aria-hidden="true"
                   />
                   <div className="relative">
-                    <div className="text-xs uppercase tracking-[0.28em] text-white/45">{item.type}</div>
+                    <div className="text-xs uppercase tracking-[0.28em] text-white/45">
+                      {item.type}
+                    </div>
                     <h3 className="mt-3 text-2xl font-medium tracking-[-0.03em] text-white">
                       {item.title}
                     </h3>
                     <p className="mt-4 text-sm leading-7 text-white/72">{item.text}</p>
                     <div className="mt-6 rounded-[1.4rem] border border-white/10 bg-black/20 p-4">
                       <div className="text-xs uppercase tracking-[0.24em] text-white/40">
-                        What improved
+                        Wat verbeterde
                       </div>
                       <div className="mt-2 text-sm text-white/82">{item.result}</div>
                     </div>
@@ -748,21 +772,24 @@ export default function NorthernStudioSite() {
           <section id="process" className="py-24">
             <div className="grid gap-10 lg:grid-cols-[0.92fr_1.08fr]">
               <div>
-                <p className="text-sm uppercase tracking-[0.28em] text-white/45">Process</p>
+                <p className="text-sm uppercase tracking-[0.28em] text-white/45">Proces</p>
                 <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] sm:text-5xl">
-                  A clean workflow from concept to launch.
+                  Een helder traject van concept tot lancering.
                 </h2>
                 <p className="mt-6 text-lg leading-8 text-white/65">
-                  The process is collaborative but structured. You bring the business context.
-                  Northern Studio shapes the digital presence. Then we refine until it feels
-                  commercially sharp.
+                  Het proces is collaboratief maar gestructureerd. Jij brengt de bedrijfscontext. Northern Studio vormt de digitale aanwezigheid. Daarna verfijnen we tot het commercieel scherp voelt.
                 </p>
               </div>
               <div className="grid gap-4">
                 {process.map(([num, title, text]) => (
-                  <article key={num} className="rounded-[1.75rem] border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
+                  <article
+                    key={num}
+                    className="rounded-[1.75rem] border border-white/10 bg-white/5 p-6 backdrop-blur-xl"
+                  >
                     <div className="flex flex-col gap-4 sm:flex-row sm:items-start">
-                      <div className="text-sm uppercase tracking-[0.28em] text-white/40">{num}</div>
+                      <div className="text-sm uppercase tracking-[0.28em] text-white/40">
+                        {num}
+                      </div>
                       <div>
                         <h3 className="text-2xl font-medium tracking-[-0.03em]">{title}</h3>
                         <p className="mt-3 leading-7 text-white/65">{text}</p>
@@ -776,13 +803,12 @@ export default function NorthernStudioSite() {
 
           <section id="pricing" className="py-24">
             <div className="max-w-3xl">
-              <p className="text-sm uppercase tracking-[0.28em] text-white/45">Packages</p>
+              <p className="text-sm uppercase tracking-[0.28em] text-white/45">Pakketten</p>
               <h2 className="mt-4 text-4xl font-semibold tracking-[-0.04em] sm:text-5xl">
-                Positioned for real clients, not bargain hunters with a butterfly net.
+                Gepositioneerd voor echte klanten, niet voor koopjesjagers met een vlindernet.
               </h2>
               <p className="mt-6 text-lg leading-8 text-white/65">
-                Clear pricing anchors help the right buyers self-select. The goal is not to be the
-                cheapest. The goal is to look worth it.
+                Duidelijke prijsankers helpen de juiste kopers zichzelf selecteren. Het doel is niet om de goedkoopste te zijn. Het doel is om de investering waard te lijken.
               </p>
             </div>
 
@@ -814,7 +840,7 @@ export default function NorthernStudioSite() {
                       </div>
                       {tier.featured && (
                         <div className="rounded-full border border-white/10 bg-white px-3 py-1 text-xs font-medium text-neutral-950">
-                          Most popular
+                          Populairst
                         </div>
                       )}
                     </div>
@@ -837,7 +863,7 @@ export default function NorthernStudioSite() {
                           : "border border-white/10 bg-black/20 text-white hover:bg-white/10"
                       }`}
                     >
-                      Enquire now
+                      Vraag info aan
                     </a>
                   </div>
                 </article>
@@ -849,7 +875,7 @@ export default function NorthernStudioSite() {
             <div className="mb-8 text-center">
               <div className="text-sm uppercase tracking-[0.28em] text-white/45">Social proof</div>
               <h3 className="mt-3 text-3xl font-semibold tracking-[-0.04em] text-white sm:text-4xl">
-                Built to attract the kind of clients who notice quality.
+                Gebouwd om het soort klanten aan te trekken dat kwaliteit opmerkt.
               </h3>
             </div>
             <div className="grid gap-6 lg:grid-cols-3">
@@ -860,7 +886,7 @@ export default function NorthernStudioSite() {
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-white/6 to-transparent" aria-hidden="true" />
                   <div className="relative">
-                    <div className="mb-6 flex items-center gap-1 text-white/75" aria-label="5 star rating">
+                    <div className="mb-6 flex items-center gap-1 text-white/75" aria-label="5 sterren beoordeling">
                       <Star className="h-4 w-4 fill-current" />
                       <Star className="h-4 w-4 fill-current" />
                       <Star className="h-4 w-4 fill-current" />
@@ -881,13 +907,13 @@ export default function NorthernStudioSite() {
           <section className="py-24">
             <div className="grid gap-8 lg:grid-cols-[1fr_1fr]">
               <div className="rounded-[2rem] border border-white/10 bg-white/5 p-6 backdrop-blur-xl">
-                <p className="text-sm uppercase tracking-[0.28em] text-white/45">Why clients buy</p>
+                <p className="text-sm uppercase tracking-[0.28em] text-white/45">Waarom klanten kopen</p>
                 <div className="mt-6 space-y-4">
                   {[
-                    "Their current site looks outdated or generic",
-                    "They want to charge more and need the website to support that",
-                    "They need a stronger first impression for serious buyers",
-                    "They want a redesign that feels custom, modern, and credible",
+                    "Hun huidige site oogt verouderd of generiek",
+                    "Ze willen meer vragen en hebben een website nodig die dat ondersteunt",
+                    "Ze hebben een sterkere eerste indruk nodig voor serieuze kopers",
+                    "Ze willen een redesign dat custom, modern en geloofwaardig aanvoelt",
                   ].map((item) => (
                     <div
                       key={item}
@@ -936,12 +962,10 @@ export default function NorthernStudioSite() {
                 <div>
                   <p className="text-sm uppercase tracking-[0.28em] text-white/45">Contact</p>
                   <h2 className="mt-4 max-w-3xl text-4xl font-semibold tracking-[-0.04em] sm:text-5xl lg:text-6xl">
-                    Let’s build the website people remember.
+                    Laten we de website bouwen die mensen onthouden.
                   </h2>
                   <p className="mt-6 max-w-2xl text-lg leading-8 text-white/70">
-                    Whether you need a new premium website or a redesign of something ancient and
-                    mildly tragic, the aim is the same: create a digital presence that makes your
-                    business feel worth paying attention to.
+                    Of je nu een nieuwe premium website nodig hebt of een redesign van iets ouds en licht tragisch, het doel blijft hetzelfde: een digitale aanwezigheid creëren die je bedrijf de moeite waard maakt om aandacht aan te geven.
                   </p>
 
                   <div className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -971,10 +995,10 @@ export default function NorthernStudioSite() {
 
                 <div className="rounded-[1.75rem] border border-white/10 bg-black/20 p-5">
                   {!submitted ? (
-                    <form onSubmit={handleSubmit} noValidate className="space-y-4" aria-label="Project enquiry form">
+                    <form onSubmit={handleSubmit} noValidate className="space-y-4" aria-label="Projectaanvraagformulier">
                       <div>
                         <label htmlFor="name" className="mb-2 block text-sm text-white/65">
-                          Name
+                          Naam
                         </label>
                         <input
                           id="name"
@@ -983,13 +1007,17 @@ export default function NorthernStudioSite() {
                           aria-invalid={!!errors.name}
                           aria-describedby={errors.name ? "name-error" : undefined}
                           className="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition placeholder:text-white/25 focus:border-white/25"
-                          placeholder="Your name"
+                          placeholder="Je naam"
                         />
-                        {errors.name && <p id="name-error" className="mt-2 text-sm text-amber-200">{errors.name}</p>}
+                        {errors.name && (
+                          <p id="name-error" className="mt-2 text-sm text-amber-200">
+                            {errors.name}
+                          </p>
+                        )}
                       </div>
                       <div>
                         <label htmlFor="email" className="mb-2 block text-sm text-white/65">
-                          Email
+                          E-mail
                         </label>
                         <input
                           id="email"
@@ -999,7 +1027,7 @@ export default function NorthernStudioSite() {
                           aria-invalid={!!errors.email}
                           aria-describedby={errors.email ? "email-error" : undefined}
                           className="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition placeholder:text-white/25 focus:border-white/25"
-                          placeholder="you@company.com"
+                          placeholder="jij@bedrijf.com"
                         />
                         {errors.email && (
                           <p id="email-error" className="mt-2 text-sm text-amber-200">
@@ -1009,19 +1037,19 @@ export default function NorthernStudioSite() {
                       </div>
                       <div>
                         <label htmlFor="company" className="mb-2 block text-sm text-white/65">
-                          Business / Brand
+                          Bedrijf / merk
                         </label>
                         <input
                           id="company"
                           value={form.company}
                           onChange={(e) => handleChange("company", e.target.value)}
                           className="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition placeholder:text-white/25 focus:border-white/25"
-                          placeholder="Business name"
+                          placeholder="Naam van je bedrijf"
                         />
                       </div>
                       <div>
                         <label htmlFor="details" className="mb-2 block text-sm text-white/65">
-                          What do you need?
+                          Wat heb je nodig?
                         </label>
                         <textarea
                           id="details"
@@ -1031,7 +1059,7 @@ export default function NorthernStudioSite() {
                           aria-describedby={errors.details ? "details-error" : undefined}
                           rows={5}
                           className="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-white outline-none transition placeholder:text-white/25 focus:border-white/25"
-                          placeholder="New site, redesign, pages needed, style, goals..."
+                          placeholder="Nieuwe site, redesign, aantal pagina’s, stijl, doelen..."
                         />
                         {errors.details && (
                           <p id="details-error" className="mt-2 text-sm text-amber-200">
@@ -1043,26 +1071,25 @@ export default function NorthernStudioSite() {
                         type="submit"
                         className="inline-flex w-full items-center justify-center rounded-full bg-white px-5 py-3.5 text-sm font-medium text-neutral-950 transition hover:scale-[1.01] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
                       >
-                        Send project request
+                        Verstuur projectaanvraag
                       </button>
                       <p className="text-xs leading-6 text-white/45">
-                        By contacting Northern Studio, you agree to be contacted back regarding your enquiry. See our{" "}
+                        Door contact op te nemen met Northern Studio ga je ermee akkoord dat we je mogen contacteren over je aanvraag. Bekijk ons{" "}
                         <Link href="/privacy-policy" className="underline underline-offset-4 hover:text-white">
-                          Privacy Policy
+                          Privacybeleid
                         </Link>{" "}
-                        and{" "}
+                        en onze{" "}
                         <Link href="/terms" className="underline underline-offset-4 hover:text-white">
-                          Terms
+                          Algemene voorwaarden
                         </Link>
                         .
                       </p>
                     </form>
                   ) : (
                     <div className="rounded-[1.5rem] border border-emerald-400/20 bg-emerald-400/10 p-6 text-emerald-100">
-                      <div className="text-lg font-medium">Project request captured.</div>
+                      <div className="text-lg font-medium">Projectaanvraag ontvangen.</div>
                       <p className="mt-2 text-sm leading-7 text-emerald-50/85">
-                        The interface flow is working. In production, this form should connect to
-                        email, Formspree, Resend, or a CRM so your leads do not vanish into the digital bog.
+                        De interfaceflow werkt. In productie moet dit formulier gekoppeld worden aan e-mail, Formspree, Resend of een CRM zodat je leads niet verdwijnen in het digitale moeras.
                       </p>
                     </div>
                   )}
@@ -1076,21 +1103,19 @@ export default function NorthernStudioSite() {
               <div>
                 <BrandMark />
                 <p className="mt-4 max-w-xl text-sm leading-7 text-white/50">
-                  Northern Studio creates premium custom websites for professionals,
-                  individuals, and businesses that want to look sharper online and convert more
-                  trust into enquiries.
+                  Northern Studio creëert premium websites op maat voor professionals, individuen en bedrijven die online scherper willen ogen en meer vertrouwen willen omzetten in aanvragen.
                 </p>
               </div>
 
               <div className="grid gap-3 text-sm text-white/55 sm:grid-cols-2 lg:text-right">
                 <a href="#services" className="transition hover:text-white">
-                  Services
+                  Diensten
                 </a>
                 <a href="#work" className="transition hover:text-white">
-                  Work
+                  Werk
                 </a>
                 <a href="#pricing" className="transition hover:text-white">
-                  Pricing
+                  Prijzen
                 </a>
                 <a href="#contact" className="transition hover:text-white">
                   Contact
@@ -1099,13 +1124,13 @@ export default function NorthernStudioSite() {
                   href="/privacy-policy"
                   className="inline-flex items-center gap-2 transition hover:text-white"
                 >
-                  <FileText className="h-4 w-4" /> Privacy Policy
+                  <FileText className="h-4 w-4" /> Privacybeleid
                 </Link>
                 <Link
                   href="/terms"
                   className="inline-flex items-center gap-2 transition hover:text-white"
                 >
-                  <FileText className="h-4 w-4" /> Terms
+                  <FileText className="h-4 w-4" /> Algemene voorwaarden
                 </Link>
               </div>
             </div>
@@ -1113,7 +1138,7 @@ export default function NorthernStudioSite() {
             <div className="mt-8 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs uppercase tracking-[0.22em] text-white/35 sm:flex-row sm:items-center sm:justify-between">
               <div>© 2026 Northern Studio</div>
               <div className="flex items-center gap-2">
-                <Rocket className="h-3.5 w-3.5" /> designed for real-world launch
+                <Rocket className="h-3.5 w-3.5" /> ontworpen voor een echte lancering
               </div>
             </div>
           </footer>

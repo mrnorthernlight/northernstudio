@@ -1,4 +1,4 @@
-export default function PrivacyPolicyPage() {
+export default function PrivacyPolicyPageNl() {
   return (
     <main className="min-h-screen bg-neutral-950 px-6 py-10 text-white">
       <div className="mx-auto max-w-4xl">
@@ -6,56 +6,57 @@ export default function PrivacyPolicyPage() {
           href="/"
           className="inline-block rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/70"
         >
-          ← Back to home
+          ← Terug naar home
         </a>
 
         <div className="mt-8 rounded-3xl border border-white/10 bg-white/5 p-8">
           <p className="text-xs uppercase tracking-[0.28em] text-white/45">
-            Legal
+            Juridisch
           </p>
-          <h1 className="mt-4 text-4xl font-semibold">Privacy Policy</h1>
+          <h1 className="mt-4 text-4xl font-semibold">Privacybeleid</h1>
           <p className="mt-4 text-sm leading-7 text-white/70">
-            This Privacy Policy explains how Northern Studio handles data in
-            connection with northernstudio.be.
+            Dit privacybeleid legt uit hoe Northern Studio gegevens verwerkt in
+            verband met northernstudio.be.
           </p>
         </div>
 
         <div className="mt-8 space-y-6">
           <section className="rounded-3xl border border-white/10 bg-white/5 p-6">
-            <h2 className="text-2xl font-semibold">1. Who we are</h2>
+            <h2 className="text-2xl font-semibold">1. Wie wij zijn</h2>
             <div className="mt-4 space-y-4 text-sm leading-7 text-white/70">
-              <p>Northern Studio operates this website.</p>
+              <p>Northern Studio beheert deze website.</p>
               <p>
-                <strong>Business name:</strong> Northern Studio
+                <strong>Bedrijfsnaam:</strong> Northern Studio
                 <br />
                 <strong>Website:</strong> https://northernstudio.be
                 <br />
-                <strong>Email:</strong> info@northernstudio.be
+                <strong>E-mail:</strong> info@northernstudio.be
                 <br />
-                <strong>Phone:</strong> +32 479 10 42 89
+                <strong>Telefoon:</strong> +32 479 10 42 89
                 <br />
-                <strong>Location:</strong> Belgium
+                <strong>Locatie:</strong> België
               </p>
             </div>
           </section>
 
           <section className="rounded-3xl border border-white/10 bg-white/5 p-6">
-            <h2 className="text-2xl font-semibold">2. Data collection</h2>
+            <h2 className="text-2xl font-semibold">2. Gegevensverzameling</h2>
             <div className="mt-4 space-y-4 text-sm leading-7 text-white/70">
               <p>
-                Northern Studio does not intentionally collect personal data
-                through account registration, newsletters, or analytics tools
-                operated directly by Northern Studio on this website.
+                Northern Studio verzamelt niet bewust persoonsgegevens via
+                accountregistratie, nieuwsbrieven of analysetools die rechtstreeks
+                door Northern Studio op deze website worden beheerd.
               </p>
               <p>
-                If you contact Northern Studio directly by email or phone, any
-                information you provide in that communication is used only to
-                respond to your enquiry or discuss services.
+                Als u rechtstreeks contact opneemt met Northern Studio via e-mail
+                of telefoon, worden de gegevens die u in die communicatie verstrekt
+                uitsluitend gebruikt om op uw vraag te reageren of diensten te
+                bespreken.
               </p>
               <p>
-                This website also uses third-party services, including Google
-                Translate, which may process technical or usage-related data when
-                the feature loads or is used.
+                Deze website gebruikt ook diensten van derden, waaronder Google
+                Translate, die technische of gebruiksgerelateerde gegevens kunnen
+                verwerken wanneer die functie wordt geladen of gebruikt.
               </p>
             </div>
           </section>
@@ -64,70 +65,71 @@ export default function PrivacyPolicyPage() {
             <h2 className="text-2xl font-semibold">3. Google Translate</h2>
             <div className="mt-4 space-y-4 text-sm leading-7 text-white/70">
               <p>
-                This website uses Google Translate to offer automatic page
-                translation. When this feature loads or is used, your browser may
-                connect to Google services and Google may process technical
-                information such as browser, device, IP address, and usage-related
-                data according to Google’s own policies.
+                Deze website gebruikt Google Translate om automatische vertaling
+                van pagina’s aan te bieden. Wanneer deze functie wordt geladen of
+                gebruikt, kan uw browser verbinding maken met Google-diensten en
+                kan Google technische informatie verwerken, zoals browser,
+                apparaat, IP-adres en gebruiksgerelateerde gegevens, volgens het
+                eigen privacybeleid van Google.
               </p>
               <p>
-                Google acts as a third-party service provider for this
-                functionality. Northern Studio does not control how Google handles
-                data once that service is loaded.
-              </p>
-            </div>
-          </section>
-
-          <section className="rounded-3xl border border-white/10 bg-white/5 p-6">
-            <h2 className="text-2xl font-semibold">4. Technical data</h2>
-            <div className="mt-4 space-y-4 text-sm leading-7 text-white/70">
-              <p>
-                Like most websites, basic technical information such as server
-                logs or IP-related request data may be processed by the hosting
-                environment as necessary for security, performance, and delivery
-                of the website.
+                Google treedt op als externe dienstverlener voor deze functionaliteit.
+                Northern Studio heeft geen controle over hoe Google gegevens verwerkt
+                zodra deze dienst wordt geladen.
               </p>
             </div>
           </section>
 
           <section className="rounded-3xl border border-white/10 bg-white/5 p-6">
-            <h2 className="text-2xl font-semibold">5. Cookies and similar technologies</h2>
+            <h2 className="text-2xl font-semibold">4. Technische gegevens</h2>
             <div className="mt-4 space-y-4 text-sm leading-7 text-white/70">
               <p>
-                Northern Studio does not intend to use non-essential analytics or
-                advertising cookies directly on this website.
-              </p>
-              <p>
-                However, third-party services or the hosting environment may use
-                technical storage, scripts, or similar technologies that are
-                necessary for functionality, security, or service delivery.
+                Zoals de meeste websites kan basis technische informatie, zoals
+                serverlogs of IP-gerelateerde aanvraaggegevens, door de hostingomgeving
+                worden verwerkt voor beveiliging, prestaties en levering van de website.
               </p>
             </div>
           </section>
 
           <section className="rounded-3xl border border-white/10 bg-white/5 p-6">
-            <h2 className="text-2xl font-semibold">6. How information is used</h2>
+            <h2 className="text-2xl font-semibold">5. Cookies en gelijkaardige technologieën</h2>
             <div className="mt-4 space-y-4 text-sm leading-7 text-white/70">
               <p>
-                Any information sent directly by email or phone is used only to:
+                Northern Studio is niet van plan om rechtstreeks niet-essentiële
+                analytische of advertentiecookies op deze website te gebruiken.
+              </p>
+              <p>
+                Externe diensten of de hostingomgeving kunnen echter technische
+                opslag, scripts of gelijkaardige technologieën gebruiken die nodig
+                zijn voor functionaliteit, beveiliging of levering van de dienst.
+              </p>
+            </div>
+          </section>
+
+          <section className="rounded-3xl border border-white/10 bg-white/5 p-6">
+            <h2 className="text-2xl font-semibold">6. Hoe informatie wordt gebruikt</h2>
+            <div className="mt-4 space-y-4 text-sm leading-7 text-white/70">
+              <p>
+                Informatie die rechtstreeks via e-mail of telefoon wordt verzonden,
+                wordt uitsluitend gebruikt om:
               </p>
               <ul className="list-disc space-y-2 pl-5">
-                <li>respond to enquiries;</li>
-                <li>communicate about services or projects;</li>
-                <li>protect against spam, abuse, or security issues;</li>
-                <li>comply with legal obligations where applicable.</li>
+                <li>te reageren op vragen;</li>
+                <li>te communiceren over diensten of projecten;</li>
+                <li>spam, misbruik of beveiligingsproblemen te beperken;</li>
+                <li>te voldoen aan wettelijke verplichtingen indien van toepassing.</li>
               </ul>
             </div>
           </section>
 
           <section className="rounded-3xl border border-white/10 bg-white/5 p-6">
-            <h2 className="text-2xl font-semibold">7. Third-party services</h2>
+            <h2 className="text-2xl font-semibold">7. Diensten van derden</h2>
             <div className="mt-4 space-y-4 text-sm leading-7 text-white/70">
               <p>
-                This website may use third-party services or scripts to provide
-                certain functionality. Northern Studio is not responsible for the
-                separate privacy practices or data handling policies of third-party
-                providers.
+                Deze website kan diensten of scripts van derden gebruiken om
+                bepaalde functionaliteiten te bieden. Northern Studio is niet
+                verantwoordelijk voor het afzonderlijke privacybeleid of de
+                gegevensverwerking van externe aanbieders.
               </p>
             </div>
           </section>
@@ -138,11 +140,11 @@ export default function PrivacyPolicyPage() {
               <p>
                 Northern Studio
                 <br />
-                Email: info@northernstudio.be
+                E-mail: info@northernstudio.be
                 <br />
-                Phone: +32 479 10 42 89
+                Telefoon: +32 479 10 42 89
                 <br />
-                Location: Belgium
+                Locatie: België
               </p>
             </div>
           </section>
