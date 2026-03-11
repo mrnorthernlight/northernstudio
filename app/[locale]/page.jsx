@@ -15,73 +15,242 @@ import {
   LifeBuoy,
   Palette,
 } from "lucide-react";
+import { useParams } from "next/navigation";
 
-const services = [
-  {
-    title: "Custom PC's",
-    description:
-      "Gaming pc's, workstations en upgrades. Northern Studio helpt met het kiezen van onderdelen, compatibiliteit controleren en kan de volledige build voor je uitvoeren.",
-    href: "/nl/pc-builder",
-    icon: Cpu,
-    tags: ["Gaming PC's", "Workstations", "Upgrades"],
+const content = {
+  nl: {
+    badge: "PC builds, IT hulp, Windows support en premium webdesign",
+    title1: "Stel de juiste pc samen.",
+    title2: "Northern Studio regelt de rest.",
+    intro:
+      "Northern Studio helpt mensen met custom pc's, hardwareadvies, volledige IT hulp, Windows-problemen, premium websites en logo design. Duidelijk advies, praktische oplossingen en een professionele aanpak.",
+    primaryCta: "Start de PC Builder",
+    secondaryCta: "Neem contact op",
+    builderLabel: "PC Builder",
+    builderTitle: "Begin met het plannen van je pc",
+    builderPill: "Snel, duidelijk en zonder giswerk",
+    builderCards: [
+      ["Kies je onderdelen", "CPU, GPU, RAM, opslag, moederbord, PSU, case en koeler"],
+      ["Controleer compatibiliteit", "Voorkom fouten zoals verkeerde sockets of een te zwakke voeding"],
+      ["Schat stroomverbruik", "Krijg snel een idee van hoeveel vermogen je systeem nodig heeft"],
+      ["Krijg prijsinzicht", "Zie duidelijk wat de build ongeveer kost voor je beslist wat je doet"],
+    ],
+    builderCta1: "Koop zelf je onderdelen",
+    builderCta2: "Laat Northern Studio bouwen",
+    processTitle: "Hoe het bouwproces werkt",
+    processSteps: [
+      "Stel je pc samen met de configurator",
+      "Verstuur je aanvraag",
+      "Ontvang een duidelijke offerte",
+      "Betaal vóór de assemblage",
+      "Onderdelen worden besteld, geassembleerd en geleverd",
+    ],
+    policyLabel: "Beleid",
+    policyTitle: "Duidelijk en veilig geregeld",
+    policyText:
+      "Volledige betaling is vereist vóór de assemblage. Zo blijven prijzen duidelijk, vermijd je voorraadrisico en blijft het proces eerlijk en overzichtelijk.",
+    audienceLabel: "Voor wie",
+    audienceTitle: "Northern Studio helpt zowel particulieren als bedrijven",
+    audiences: [
+      {
+        title: "Gaming PC's",
+        text: "Voor spelers die een systeem willen dat echt past bij hun games, resolutie en budget.",
+        icon: Monitor,
+      },
+      {
+        title: "Workstations",
+        text: "Voor editing, design, multitasking en andere zwaardere workflows waar stabiliteit telt.",
+        icon: Briefcase,
+      },
+      {
+        title: "IT Hulp",
+        text: "Voor trage pc's, Windows-problemen, upgrades, virusverwijdering en algemene technische hulp.",
+        icon: LifeBuoy,
+      },
+      {
+        title: "Web & Branding",
+        text: "Voor ondernemers die een premium website, logo of sterkere online uitstraling nodig hebben.",
+        icon: Palette,
+      },
+    ],
+    servicesLabel: "Diensten",
+    servicesTitle: "Alles wat Northern Studio voor je kan doen",
+    services: [
+      {
+        title: "Custom PC's",
+        description:
+          "Gaming pc's, workstations en upgrades. Northern Studio helpt met het kiezen van onderdelen, compatibiliteit controleren en kan de volledige build voor je uitvoeren.",
+        href: "/pc-builder",
+        icon: Cpu,
+        tags: ["Gaming PC's", "Workstations", "Upgrades"],
+      },
+      {
+        title: "IT Hulp & Windows Specialist",
+        description:
+          "Problemen oplossen, pc versnellen, virusverwijdering, upgrades, data-overdracht en hulp met Windows-installaties en configuratie.",
+        href: "/it-help",
+        icon: Wrench,
+        tags: ["Windows", "Herstellingen", "Optimalisatie"],
+      },
+      {
+        title: "Hardware Advies",
+        description:
+          "Hulp bij het kiezen van onderdelen, compatibiliteit controleren, prestaties vergelijken en de juiste configuratie vinden voor jouw gebruik.",
+        href: "/guides",
+        icon: ShieldCheck,
+        tags: ["Compatibiliteit", "Onderdelen", "Prestaties"],
+      },
+      {
+        title: "Webdesign & Branding",
+        description:
+          "Premium websites, logo design en digitale aanwezigheid voor bedrijven die professioneel online willen verschijnen.",
+        href: "/digital-services",
+        icon: Globe,
+        tags: ["Webdesign", "Logo Design", "Branding"],
+      },
+    ],
+    view: "Bekijk",
+    reasonsLabel: "Waarom Northern Studio",
+    reasonsTitle: "Waarom mensen voor Northern Studio kiezen",
+    reasons: [
+      "Compatibiliteit staat voorop",
+      "Duidelijke offerte en betaling",
+      "Lokale ondersteuning in België",
+      "Professionele assemblage en begeleiding",
+      "Windows- en hardwarekennis in één studio",
+      "Persoonlijk contact en praktische oplossingen",
+    ],
+    contactLabel: "Klaar om te starten?",
+    contactTitle: "Vertel wat je zoekt, dan denken we met je mee",
+    contactText:
+      "Of je nu een gaming pc, workstation, upgrade, Windows-hulp, website of logo nodig hebt: Northern Studio helpt je graag verder met duidelijk advies en een concrete volgende stap.",
+    contactBoxLabel: "Waarmee kunnen we helpen?",
+    contactBoxText:
+      "Nieuwe pc samenstellen, onderdelen kiezen, compatibiliteit controleren, problemen oplossen, Windows opnieuw installeren, een volledige build laten uitvoeren of je bedrijf online sterker neerzetten.",
+    contactCta1: "Start je build",
+    contactCta2: "Contacteer Northern Studio",
+    footerContact: "Contact",
+    footerPrivacy: "Privacybeleid",
+    footerTerms: "Algemene voorwaarden",
+    footerRights: "Alle rechten voorbehouden.",
   },
-  {
-    title: "IT Hulp & Windows Specialist",
-    description:
-      "Problemen oplossen, pc versnellen, virusverwijdering, upgrades, data-overdracht en hulp met Windows-installaties en configuratie.",
-    href: "/nl/it-help",
-    icon: Wrench,
-    tags: ["Windows", "Herstellingen", "Optimalisatie"],
+  en: {
+    badge: "PC builds, IT help, Windows support and premium web design",
+    title1: "Build the right PC.",
+    title2: "Northern Studio handles the rest.",
+    intro:
+      "Northern Studio helps people with custom PCs, hardware guidance, full IT support, Windows issues, premium websites and logo design. Clear advice, practical solutions and a professional approach.",
+    primaryCta: "Start the PC Builder",
+    secondaryCta: "Get in touch",
+    builderLabel: "PC Builder",
+    builderTitle: "Start planning your PC",
+    builderPill: "Fast, clear and without guesswork",
+    builderCards: [
+      ["Choose your parts", "CPU, GPU, RAM, storage, motherboard, PSU, case and cooler"],
+      ["Check compatibility", "Avoid mistakes like mismatched sockets or an underpowered PSU"],
+      ["Estimate power usage", "Get a quick idea of how much power your system will need"],
+      ["Understand the cost", "See what the build roughly costs before deciding what to do next"],
+    ],
+    builderCta1: "Buy your own parts",
+    builderCta2: "Let Northern Studio build it",
+    processTitle: "How the build process works",
+    processSteps: [
+      "Build your PC with the configurator",
+      "Send your request",
+      "Receive a clear quote",
+      "Pay before assembly",
+      "Parts are ordered, assembled and delivered",
+    ],
+    policyLabel: "Policy",
+    policyTitle: "Clear and securely managed",
+    policyText:
+      "Full payment is required before assembly. This keeps pricing clear, avoids inventory risk and keeps the process fair and transparent.",
+    audienceLabel: "Who it's for",
+    audienceTitle: "Northern Studio helps both individuals and businesses",
+    audiences: [
+      {
+        title: "Gaming PCs",
+        text: "For gamers who want a system that truly matches their games, resolution and budget.",
+        icon: Monitor,
+      },
+      {
+        title: "Workstations",
+        text: "For editing, design, multitasking and heavier workflows where stability matters.",
+        icon: Briefcase,
+      },
+      {
+        title: "IT Help",
+        text: "For slow PCs, Windows problems, upgrades, virus removal and general technical support.",
+        icon: LifeBuoy,
+      },
+      {
+        title: "Web & Branding",
+        text: "For business owners who need a premium website, logo or a stronger online presence.",
+        icon: Palette,
+      },
+    ],
+    servicesLabel: "Services",
+    servicesTitle: "Everything Northern Studio can help you with",
+    services: [
+      {
+        title: "Custom PCs",
+        description:
+          "Gaming PCs, workstations and upgrades. Northern Studio helps you choose parts, check compatibility and can handle the full build for you.",
+        href: "/pc-builder",
+        icon: Cpu,
+        tags: ["Gaming PCs", "Workstations", "Upgrades"],
+      },
+      {
+        title: "IT Help & Windows Specialist",
+        description:
+          "Troubleshooting, speeding up PCs, virus removal, upgrades, data transfer and help with Windows installations and configuration.",
+        href: "/it-help",
+        icon: Wrench,
+        tags: ["Windows", "Repairs", "Optimisation"],
+      },
+      {
+        title: "Hardware Guidance",
+        description:
+          "Help choosing parts, checking compatibility, comparing performance and finding the right setup for your needs.",
+        href: "/guides",
+        icon: ShieldCheck,
+        tags: ["Compatibility", "Parts", "Performance"],
+      },
+      {
+        title: "Web Design & Branding",
+        description:
+          "Premium websites, logo design and digital presence for businesses that want to look professional online.",
+        href: "/digital-services",
+        icon: Globe,
+        tags: ["Web Design", "Logo Design", "Branding"],
+      },
+    ],
+    view: "Explore",
+    reasonsLabel: "Why Northern Studio",
+    reasonsTitle: "Why people choose Northern Studio",
+    reasons: [
+      "Compatibility comes first",
+      "Clear quotes and payment process",
+      "Local support in Belgium",
+      "Professional assembly and guidance",
+      "Windows and hardware knowledge in one studio",
+      "Personal contact and practical solutions",
+    ],
+    contactLabel: "Ready to get started?",
+    contactTitle: "Tell us what you need and we'll think it through with you",
+    contactText:
+      "Whether you need a gaming PC, workstation, upgrade, Windows help, website or logo: Northern Studio will help you with clear advice and a practical next step.",
+    contactBoxLabel: "How can we help?",
+    contactBoxText:
+      "Building a new PC, choosing parts, checking compatibility, solving problems, reinstalling Windows, handling a full build or helping your business look stronger online.",
+    contactCta1: "Start your build",
+    contactCta2: "Contact Northern Studio",
+    footerContact: "Contact",
+    footerPrivacy: "Privacy Policy",
+    footerTerms: "Terms & Conditions",
+    footerRights: "All rights reserved.",
   },
-  {
-    title: "Hardware Advies",
-    description:
-      "Hulp bij het kiezen van onderdelen, compatibiliteit controleren, prestaties vergelijken en de juiste configuratie vinden voor jouw gebruik.",
-    href: "/nl/guides",
-    icon: ShieldCheck,
-    tags: ["Compatibiliteit", "Onderdelen", "Prestaties"],
-  },
-  {
-    title: "Webdesign & Branding",
-    description:
-      "Premium websites, logo design en digitale aanwezigheid voor bedrijven die professioneel online willen verschijnen.",
-    href: "/nl/digital-services",
-    icon: Globe,
-    tags: ["Webdesign", "Logo Design", "Branding"],
-  },
-];
-
-const reasons = [
-  "Compatibiliteit staat voorop",
-  "Duidelijke offerte en betaling",
-  "Lokale ondersteuning in België",
-  "Professionele assemblage en begeleiding",
-  "Windows- en hardwarekennis in één studio",
-  "Persoonlijk contact en praktische oplossingen",
-];
-
-const audiences = [
-  {
-    title: "Gaming PC's",
-    text: "Voor spelers die een systeem willen dat echt past bij hun games, resolutie en budget.",
-    icon: Monitor,
-  },
-  {
-    title: "Workstations",
-    text: "Voor editing, design, multitasking en andere zwaardere workflows waar stabiliteit telt.",
-    icon: Briefcase,
-  },
-  {
-    title: "IT Hulp",
-    text: "Voor trage pc's, Windows-problemen, upgrades, virusverwijdering en algemene technische hulp.",
-    icon: LifeBuoy,
-  },
-  {
-    title: "Web & Branding",
-    text: "Voor ondernemers die een premium website, logo of sterkere online uitstraling nodig hebben.",
-    icon: Palette,
-  },
-];
+};
 
 function SectionCard({ children, className = "" }) {
   return (
@@ -118,12 +287,15 @@ function SecondaryButton({ href, children }) {
   );
 }
 
-export default function NorthernHomepage() {
+export default function Page() {
+  const params = useParams();
+  const locale = params?.locale === "en" ? "en" : "nl";
+  const t = content[locale];
+
   return (
     <main className="relative min-h-screen bg-black text-white">
       <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden">
         <div className="absolute inset-0 bg-[#030405]" />
-
         <div className="absolute left-1/2 top-[-6rem] h-[26rem] w-[130%] -translate-x-1/2 rounded-full bg-[radial-gradient(ellipse_at_center,rgba(168,85,247,0.30),rgba(168,85,247,0.12)_36%,transparent_72%)] blur-[58px]" />
         <div className="absolute left-[-6%] top-[6rem] h-[25rem] w-[76rem] -rotate-[10deg] rounded-full bg-[radial-gradient(ellipse_at_center,rgba(74,222,128,0.26),rgba(74,222,128,0.10)_34%,transparent_72%)] blur-[72px]" />
         <div className="absolute right-[-8%] top-[10rem] h-[28rem] w-[82rem] rotate-[12deg] rounded-full bg-[radial-gradient(ellipse_at_center,rgba(196,181,253,0.20),rgba(196,181,253,0.08)_35%,transparent_74%)] blur-[84px]" />
@@ -131,7 +303,6 @@ export default function NorthernHomepage() {
         <div className="absolute left-[-12%] top-[34%] h-[30rem] w-[84rem] rotate-[8deg] rounded-full bg-[radial-gradient(ellipse_at_center,rgba(168,85,247,0.12),transparent_74%)] blur-[104px]" />
         <div className="absolute right-[-14%] top-[52%] h-[28rem] w-[82rem] -rotate-[7deg] rounded-full bg-[radial-gradient(ellipse_at_center,rgba(74,222,128,0.10),transparent_74%)] blur-[110px]" />
         <div className="absolute left-1/2 top-[72%] h-[26rem] w-[86rem] -translate-x-1/2 rounded-full bg-[radial-gradient(ellipse_at_center,rgba(168,85,247,0.08),transparent_76%)] blur-[120px]" />
-
         <div className="absolute inset-0 opacity-[0.12] bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:120px_120px]" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.08),transparent_26%),linear-gradient(to_bottom,rgba(0,0,0,0.12),rgba(0,0,0,0.46)_32%,rgba(0,0,0,0.74)_62%,rgba(0,0,0,0.90)_100%)]" />
       </div>
@@ -140,12 +311,21 @@ export default function NorthernHomepage() {
         <div className="mx-auto max-w-4xl text-center">
           <div className="mb-8 flex justify-center sm:justify-end">
             <div className="inline-flex items-center rounded-full border border-white/10 bg-white/5 p-1 backdrop-blur">
-              <a href="/nl" className="rounded-full bg-white px-4 py-2 text-xs font-medium text-black">
+              <a
+                href="/nl"
+                className={
+                  "rounded-full px-4 py-2 text-xs font-medium transition " +
+                  (locale === "nl" ? "bg-white text-black" : "text-white/70 hover:text-white")
+                }
+              >
                 NL
               </a>
               <a
                 href="/en"
-                className="rounded-full px-4 py-2 text-xs font-medium text-white/70 transition hover:text-white"
+                className={
+                  "rounded-full px-4 py-2 text-xs font-medium transition " +
+                  (locale === "en" ? "bg-white text-black" : "text-white/70 hover:text-white")
+                }
               >
                 EN
               </a>
@@ -162,27 +342,24 @@ export default function NorthernHomepage() {
 
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/80 backdrop-blur">
             <Zap className="h-4 w-4 text-emerald-300" />
-            PC builds, IT hulp, Windows support en premium webdesign
+            {t.badge}
           </div>
 
           <h1 className="text-balance text-4xl font-semibold tracking-tight sm:text-5xl md:text-7xl">
-            <span className="block leading-[1.12]">Stel de juiste pc samen.</span>
+            <span className="block leading-[1.12]">{t.title1}</span>
             <span className="mt-3 block pb-3 leading-[1.28] bg-gradient-to-r from-white via-emerald-200 to-purple-300 bg-clip-text text-transparent">
-              Northern Studio regelt de rest.
+              {t.title2}
             </span>
           </h1>
 
-          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-white/72 md:text-xl">
-            Northern Studio helpt mensen met custom pc's, hardwareadvies, volledige IT hulp, Windows-problemen,
-            premium websites en logo design. Duidelijk advies, praktische oplossingen en een professionele aanpak.
-          </p>
+          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-white/72 md:text-xl">{t.intro}</p>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <PrimaryButton href="/nl/pc-builder">
-              Start de PC Builder
+            <PrimaryButton href={`/${locale}/pc-builder`}>
+              {t.primaryCta}
               <ArrowRight className="ml-2 h-4 w-4" />
             </PrimaryButton>
-            <SecondaryButton href="/nl/contact">Neem contact op</SecondaryButton>
+            <SecondaryButton href={`/${locale}/contact`}>{t.secondaryCta}</SecondaryButton>
           </div>
         </div>
 
@@ -191,22 +368,17 @@ export default function NorthernHomepage() {
             <div className="border-b border-white/10 px-6 py-4">
               <div className="flex items-center justify-between gap-4">
                 <div>
-                  <p className="text-sm text-white/50">PC Builder</p>
-                  <h2 className="mt-1 text-xl font-medium">Begin met het plannen van je pc</h2>
+                  <p className="text-sm text-white/50">{t.builderLabel}</p>
+                  <h2 className="mt-1 text-xl font-medium">{t.builderTitle}</h2>
                 </div>
                 <div className="rounded-full border border-purple-400/20 bg-purple-400/10 px-3 py-1 text-sm text-purple-200">
-                  Snel, duidelijk en zonder giswerk
+                  {t.builderPill}
                 </div>
               </div>
             </div>
 
             <div className="grid gap-4 p-6 md:grid-cols-2">
-              {[
-                ["Kies je onderdelen", "CPU, GPU, RAM, opslag, moederbord, PSU, case en koeler"],
-                ["Controleer compatibiliteit", "Voorkom fouten zoals verkeerde sockets of een te zwakke voeding"],
-                ["Schat stroomverbruik", "Krijg snel een idee van hoeveel vermogen je systeem nodig heeft"],
-                ["Krijg prijsinzicht", "Zie duidelijk wat de build ongeveer kost voor je beslist wat je doet"],
-              ].map(([label, value]) => (
+              {t.builderCards.map(([label, value]) => (
                 <div key={label} className="rounded-2xl border border-white/10 bg-black/25 p-4">
                   <p className="text-sm text-white/45">{label}</p>
                   <p className="mt-2 leading-7 text-white/90">{value}</p>
@@ -215,8 +387,8 @@ export default function NorthernHomepage() {
             </div>
 
             <div className="flex flex-col gap-3 border-t border-white/10 px-6 py-5 sm:flex-row">
-              <PrimaryButton href="/nl/pc-builder">Koop zelf je onderdelen</PrimaryButton>
-              <SecondaryButton href="/nl/contact">Laat Northern Studio bouwen</SecondaryButton>
+              <PrimaryButton href={`/${locale}/pc-builder`}>{t.builderCta1}</PrimaryButton>
+              <SecondaryButton href={`/${locale}/contact`}>{t.builderCta2}</SecondaryButton>
             </div>
           </SectionCard>
 
@@ -225,17 +397,11 @@ export default function NorthernHomepage() {
               <div className="p-6">
                 <div className="flex items-center gap-3">
                   <Sparkles className="h-5 w-5 text-emerald-300" />
-                  <h3 className="text-lg font-medium">Hoe het bouwproces werkt</h3>
+                  <h3 className="text-lg font-medium">{t.processTitle}</h3>
                 </div>
 
                 <div className="mt-5 space-y-4">
-                  {[
-                    "Stel je pc samen met de configurator",
-                    "Verstuur je aanvraag",
-                    "Ontvang een duidelijke offerte",
-                    "Betaal vóór de assemblage",
-                    "Onderdelen worden besteld, geassembleerd en geleverd",
-                  ].map((step, index) => (
+                  {t.processSteps.map((step, index) => (
                     <div key={step} className="flex items-start gap-3">
                       <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-purple-400/20 bg-purple-400/10 text-sm text-purple-200">
                         {index + 1}
@@ -249,12 +415,9 @@ export default function NorthernHomepage() {
 
             <SectionCard className="bg-white/[0.06]">
               <div className="p-6">
-                <p className="text-sm text-white/50">Beleid</p>
-                <h3 className="mt-2 text-xl font-medium">Duidelijk en veilig geregeld</h3>
-                <p className="mt-4 text-sm leading-7 text-white/70">
-                  Volledige betaling is vereist vóór de assemblage. Zo blijven prijzen duidelijk, vermijd je
-                  voorraadrisico en blijft het proces eerlijk en overzichtelijk.
-                </p>
+                <p className="text-sm text-white/50">{t.policyLabel}</p>
+                <h3 className="mt-2 text-xl font-medium">{t.policyTitle}</h3>
+                <p className="mt-4 text-sm leading-7 text-white/70">{t.policyText}</p>
               </div>
             </SectionCard>
           </div>
@@ -264,16 +427,13 @@ export default function NorthernHomepage() {
       <section className="relative z-10 mx-auto max-w-7xl px-6 py-16 md:px-10">
         <div className="rounded-[2rem] border border-white/10 bg-white/[0.035] px-6 py-8 backdrop-blur-xl md:px-8">
           <div className="mb-8">
-            <p className="text-sm uppercase tracking-[0.24em] text-emerald-300/80">Voor wie</p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-4xl">
-              Northern Studio helpt zowel particulieren als bedrijven
-            </h2>
+            <p className="text-sm uppercase tracking-[0.24em] text-emerald-300/80">{t.audienceLabel}</p>
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-4xl">{t.audienceTitle}</h2>
           </div>
 
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-            {audiences.map((item) => {
+            {t.audiences.map((item) => {
               const Icon = item.icon;
-
               return (
                 <div key={item.title} className="rounded-2xl border border-white/10 bg-black/20 p-5">
                   <div className="inline-flex rounded-2xl border border-purple-400/20 bg-purple-400/10 p-3 text-purple-200">
@@ -291,18 +451,15 @@ export default function NorthernHomepage() {
       <section className="relative z-10 mx-auto max-w-7xl px-6 py-20 md:px-10">
         <div>
           <div className="mb-8">
-            <p className="text-sm uppercase tracking-[0.24em] text-emerald-300/80">Diensten</p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-4xl">
-              Alles wat Northern Studio voor je kan doen
-            </h2>
+            <p className="text-sm uppercase tracking-[0.24em] text-emerald-300/80">{t.servicesLabel}</p>
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-4xl">{t.servicesTitle}</h2>
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {services.map((service) => {
+            {t.services.map((service) => {
               const Icon = service.icon;
-
               return (
-                <a key={service.title} href={service.href} className="group block">
+                <a key={service.title} href={`/${locale}${service.href}`} className="group block">
                   <SectionCard className="h-full transition-all duration-300 hover:border-emerald-300/20 hover:bg-white/[0.07] hover:shadow-xl hover:shadow-purple-500/10">
                     <div className="p-6">
                       <div className="inline-flex rounded-2xl border border-purple-400/20 bg-purple-400/10 p-3 text-purple-200">
@@ -323,7 +480,7 @@ export default function NorthernHomepage() {
                       </div>
 
                       <div className="mt-6 inline-flex items-center gap-2 text-sm text-emerald-200">
-                        Bekijk
+                        {t.view}
                         <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
                       </div>
                     </div>
@@ -339,12 +496,10 @@ export default function NorthernHomepage() {
         <div className="grid gap-6 lg:grid-cols-[1fr_1fr]">
           <SectionCard>
             <div className="p-8">
-              <p className="text-sm uppercase tracking-[0.24em] text-emerald-300/80">Waarom Northern Studio</p>
-              <h2 className="mt-4 text-3xl font-semibold tracking-tight">
-                Waarom mensen voor Northern Studio kiezen
-              </h2>
+              <p className="text-sm uppercase tracking-[0.24em] text-emerald-300/80">{t.reasonsLabel}</p>
+              <h2 className="mt-4 text-3xl font-semibold tracking-tight">{t.reasonsTitle}</h2>
               <div className="mt-8 grid gap-4 sm:grid-cols-2">
-                {reasons.map((reason) => (
+                {t.reasons.map((reason) => (
                   <div
                     key={reason}
                     className="flex items-center gap-3 rounded-2xl border border-white/10 bg-black/25 p-4"
@@ -361,32 +516,23 @@ export default function NorthernHomepage() {
 
           <SectionCard className="bg-gradient-to-br from-purple-400/10 to-white/5">
             <div className="flex h-full flex-col p-8">
-              <p className="text-sm uppercase tracking-[0.24em] text-emerald-300/80">Klaar om te starten?</p>
-              <h2 className="mt-4 text-3xl font-semibold tracking-tight">
-                Vertel wat je zoekt, dan denken we met je mee
-              </h2>
-              <p className="mt-5 max-w-xl text-sm leading-7 text-white/70">
-                Of je nu een gaming pc, workstation, upgrade, Windows-hulp, website of logo nodig hebt:
-                Northern Studio helpt je graag verder met duidelijk advies en een concrete volgende stap.
-              </p>
+              <p className="text-sm uppercase tracking-[0.24em] text-emerald-300/80">{t.contactLabel}</p>
+              <h2 className="mt-4 text-3xl font-semibold tracking-tight">{t.contactTitle}</h2>
+              <p className="mt-5 max-w-xl text-sm leading-7 text-white/70">{t.contactText}</p>
 
               <div className="mt-8 rounded-2xl border border-white/10 bg-black/25 p-5">
-                <p className="text-sm text-white/50">Waarmee kunnen we helpen?</p>
-                <p className="mt-2 text-base leading-7 text-white/85">
-                  Nieuwe pc samenstellen, onderdelen kiezen, compatibiliteit controleren, problemen oplossen,
-                  Windows opnieuw installeren, een volledige build laten uitvoeren of je bedrijf online sterker
-                  neerzetten.
-                </p>
+                <p className="text-sm text-white/50">{t.contactBoxLabel}</p>
+                <p className="mt-2 text-base leading-7 text-white/85">{t.contactBoxText}</p>
               </div>
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <PrimaryButton href="/nl/pc-builder">Start je build</PrimaryButton>
+                <PrimaryButton href={`/${locale}/pc-builder`}>{t.contactCta1}</PrimaryButton>
                 <a
                   href="mailto:info@northernstudio.be"
                   className="inline-flex h-12 items-center justify-center rounded-full border border-white/15 bg-white/5 px-6 text-sm font-medium text-white transition hover:bg-white/10"
                 >
                   <Mail className="mr-2 h-4 w-4" />
-                  Contacteer Northern Studio
+                  {t.contactCta2}
                 </a>
               </div>
             </div>
@@ -396,17 +542,20 @@ export default function NorthernHomepage() {
 
       <footer className="relative z-10 mx-auto max-w-7xl px-6 pb-10 pt-10 text-center text-sm text-white/50 md:px-10">
         <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
-          <a href="/nl/contact" className="transition hover:text-white">
-            Contact
+          <a href={`/${locale}/contact`} className="transition hover:text-white">
+            {t.footerContact}
           </a>
-          <a href="/nl/privacy" className="transition hover:text-white">
-            Privacybeleid
+          <a href={`/${locale}/privacy`} className="transition hover:text-white">
+            {t.footerPrivacy}
           </a>
-          <a href="/nl/voorwaarden" className="transition hover:text-white">
-            Algemene voorwaarden
+          <a
+            href={`/${locale}/${locale === "en" ? "terms" : "voorwaarden"}`}
+            className="transition hover:text-white"
+          >
+            {t.footerTerms}
           </a>
         </div>
-        <p className="mt-6">© {new Date().getFullYear()} Northern Studio. Alle rechten voorbehouden.</p>
+        <p className="mt-6">© {new Date().getFullYear()} Northern Studio. {t.footerRights}</p>
         <p className="mt-2">Northern Studio™</p>
       </footer>
     </main>

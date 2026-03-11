@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Northern Studio",
-  description: "PC builds, IT help, hardwareadvies en premium webdesign.",
+  description: "PC builds, IT help, hardware guidance and premium web design.",
 };
 
 export default function RootLayout({ children }) {
