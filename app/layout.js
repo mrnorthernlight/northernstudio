@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import CookieBanner from "../components/CookieBanner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,14 +14,18 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Northern Studio",
-  description: "PC builds, IT help, hardware guidance and premium web design.",
+  description:
+    "Custom PC builds, IT support, hardware consulting and premium web design.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="nl">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white`}
+      >
         {children}
+        <CookieBanner />
       </body>
     </html>
   );
