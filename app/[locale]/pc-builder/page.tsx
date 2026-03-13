@@ -50,14 +50,19 @@ const T = {
     fAchternaam:'Achternaam *', fAchternaamP:'Janssen',
     fEmail:'E-mailadres *', fEmailP:'jan@voorbeeld.be',
     fTel:'Telefoonnummer', fTelP:'+32 4xx xx xx xx',
-    fStad:'Gemeente / Stad', fStadP:'Antwerpen',
+    fStad:'Gemeente / Stad *', fStadP:'Antwerpen',
+    fAddress:'Straat + huisnummer *', fAddressP:'Voorbeeldstraat 12',
+    fPostal:'Postcode *', fPostalP:'2000',
+    fCountry:'Land *', fCountryP:'België',
     fNote:'Opmerkingen / Gebruiksdoel', fNoteP:'bijv. gaming, video editing, thuiskantoor...',
     assemblyCheck:'🔧 Montage door Northern Studio — +€150',
     assemblyCheckDesc:'Wij bouwen, testen en leveren jouw PC gebruiksklaar op.',
     nextBtn:'Volgende: Offerte Bekijken →', backBtn:'← Terug',
     step2Title:'Offerte Overzicht',
     sendEmail:'📧 Verstuur per E-mail', printBtn:'🖨 Afdrukken / PDF',
-    errMsg:'⚠ Vul naam en e-mailadres in.',
+    payBtn:'💳 Betaal volledig bedrag', payingBtn:'⏳ Doorgaan naar betaling…',
+    payNote:'Door te betalen bevestig je deze configuratie. Northern Studio bestelt de onderdelen na ontvangst van de betaling.',
+    errMsg:'⚠ Vul naam, e-mailadres, telefoonnummer en volledig adres in.',
     quoteLbl:'OFFERTE', quoteDate:'Datum', quoteValid:'Geldig tot', quoteClient:'Klant',
     quoteConfig:'PC Configuratie', quoteAssembly:'Montage', quoteAssemblyName:'🔧 Montage door Northern Studio',
     quoteSubtotal:'Subtotaal (excl. BTW)', quoteBTW:'BTW 21%', quoteTotal:'TOTAAL (incl. BTW)',
@@ -66,7 +71,7 @@ const T = {
     emailAssemblyLine:'  • Montage Northern Studio  →  €150,00',
     emailClosing:'Met vriendelijke groeten,',
     emailRefLabel:'OFFERTE REFERENTIE', emailDateLabel:'Datum', emailCustLabel:'KLANTGEGEVENS',
-    emailNameLabel:'Naam', emailTelLabel:'Tel', emailCityLabel:'Stad',
+    emailNameLabel:'Naam', emailTelLabel:'Tel', emailCityLabel:'Stad', emailAddressLabel:'Adres', emailPostalLabel:'Postcode', emailCountryLabel:'Land',
     emailConfLabel:'PC CONFIGURATIE', emailSubLabel:'Subtotaal (excl. BTW)',
     emailVatLabel:'BTW 21%', emailTotLabel:'TOTAAL (incl. BTW)', emailNoteLabel:'Opmerkingen',
     emailSubjectWord:'Offerte Aanvraag',
@@ -101,14 +106,19 @@ const T = {
     fAchternaam:'Last Name *', fAchternaamP:'Smith',
     fEmail:'Email Address *', fEmailP:'john@example.com',
     fTel:'Phone Number', fTelP:'+32 4xx xx xx xx',
-    fStad:'City / Town', fStadP:'Antwerp',
+    fStad:'City / Town *', fStadP:'Antwerp',
+    fAddress:'Street + house number *', fAddressP:'Example Street 12',
+    fPostal:'Postal Code *', fPostalP:'2000',
+    fCountry:'Country *', fCountryP:'Belgium',
     fNote:'Notes / Intended Use', fNoteP:'e.g. gaming, video editing, home office...',
     assemblyCheck:'🔧 Assembly by Northern Studio — +€150',
     assemblyCheckDesc:'We build, test and deliver your PC ready to use.',
     nextBtn:'Next: View Quote →', backBtn:'← Back',
     step2Title:'Quote Overview',
     sendEmail:'📧 Send by Email', printBtn:'🖨 Print / PDF',
-    errMsg:'⚠ Please enter your name and email address.',
+    payBtn:'💳 Pay full amount', payingBtn:'⏳ Redirecting to payment…',
+    payNote:'By paying you confirm this configuration. Northern Studio will order the parts after payment has been received.',
+    errMsg:'⚠ Please enter your name, email address, phone number and full address.',
     quoteLbl:'QUOTE', quoteDate:'Date', quoteValid:'Valid until', quoteClient:'Customer',
     quoteConfig:'PC Configuration', quoteAssembly:'Assembly', quoteAssemblyName:'🔧 Assembly by Northern Studio',
     quoteSubtotal:'Subtotal (excl. VAT)', quoteBTW:'VAT 21%', quoteTotal:'TOTAL (incl. VAT)',
@@ -117,7 +127,7 @@ const T = {
     emailAssemblyLine:'  • Assembly Northern Studio  →  €150.00',
     emailClosing:'Kind regards,',
     emailRefLabel:'QUOTE REFERENCE', emailDateLabel:'Date', emailCustLabel:'CUSTOMER DETAILS',
-    emailNameLabel:'Name', emailTelLabel:'Tel', emailCityLabel:'City',
+    emailNameLabel:'Name', emailTelLabel:'Tel', emailCityLabel:'City', emailAddressLabel:'Address', emailPostalLabel:'Postal Code', emailCountryLabel:'Country',
     emailConfLabel:'PC CONFIGURATION', emailSubLabel:'Subtotal (excl. VAT)',
     emailVatLabel:'VAT 21%', emailTotLabel:'TOTAL (incl. VAT)', emailNoteLabel:'Notes',
     emailSubjectWord:'Quote Request',
@@ -431,6 +441,7 @@ export default function PCBuilderPage() {
   const [assembly, setAssembly] = useState(false);
   const [assemblyHighlight, setAssemblyHighlight] = useState(false);
   const [quoteData, setQuoteData] = useState<any>(null);
+  const [isPaying, setIsPaying] = useState(false);
   const quoteNumRef = useRef('');
 
   const tr = T[lang];
@@ -526,7 +537,7 @@ export default function PCBuilderPage() {
     const q = quoteData;
     const lines = q.partsList.map((p:any) => `  • ${p.label}: ${p.part.name}  →  ${fmtEur(p.part.price)}`).join('\n');
     const asmLine = assembly ? '\n' + tr.emailAssemblyLine : '';
-    const body = `${tr.emailGreeting}\n\n${'━'.repeat(34)}\n${tr.emailRefLabel}: ${q.qNum}\n${tr.emailDateLabel}: ${q.dateStr}\n${'━'.repeat(34)}\n\n${tr.emailCustLabel}\n${tr.emailNameLabel}: ${q.naam}\nE-mail: ${q.email}${q.tel ? '\n'+tr.emailTelLabel+': '+q.tel : ''}${q.stad ? '\n'+tr.emailCityLabel+': '+q.stad : ''}\n\n${tr.emailConfLabel}\n${lines}${asmLine}\n\n${'━'.repeat(34)}\n${tr.emailSubLabel}: ${fmtEur(q.totalExcl)}\n${tr.emailVatLabel}: ${fmtEur(q.btw)}\n${tr.emailTotLabel}: ${fmtEur(q.totalIncl)}\n${'━'.repeat(34)}\n${q.note ? '\n'+tr.emailNoteLabel+':\n'+q.note+'\n' : ''}\n${tr.emailClosing}\n${q.naam}`;
+    const body = `${tr.emailGreeting}\n\n${'━'.repeat(34)}\n${tr.emailRefLabel}: ${q.qNum}\n${tr.emailDateLabel}: ${q.dateStr}\n${'━'.repeat(34)}\n\n${tr.emailCustLabel}\n${tr.emailNameLabel}: ${q.naam}\nE-mail: ${q.email}${q.tel ? '\n'+tr.emailTelLabel+': '+q.tel : ''}${q.address ? '\n'+tr.emailAddressLabel+': '+q.address : ''}${q.postal ? '\n'+tr.emailPostalLabel+': '+q.postal : ''}${q.stad ? '\n'+tr.emailCityLabel+': '+q.stad : ''}${q.country ? '\n'+tr.emailCountryLabel+': '+q.country : ''}\n\n${tr.emailConfLabel}\n${lines}${asmLine}\n\n${'━'.repeat(34)}\n${tr.emailSubLabel}: ${fmtEur(q.totalExcl)}\n${tr.emailVatLabel}: ${fmtEur(q.btw)}\n${tr.emailTotLabel}: ${fmtEur(q.totalIncl)}\n${'━'.repeat(34)}\n${q.note ? '\n'+tr.emailNoteLabel+':\n'+q.note+'\n' : ''}\n${tr.emailClosing}\n${q.naam}`;
     const subject = encodeURIComponent(`${tr.emailSubjectWord} ${q.qNum} — ${q.naam}`);
     window.location.href = `mailto:${COMPANY_EMAIL}?subject=${subject}&body=${encodeURIComponent(body)}&cc=${encodeURIComponent(q.email)}`;
   }
@@ -536,9 +547,50 @@ export default function PCBuilderPage() {
     const q = quoteData;
     const rows = q.partsList.map((p:any) => `<div class="row"><span class="cat">${p.label}</span><span class="nm">${p.part.name}</span><span class="pr">${fmtEur(p.part.price)}</span></div>`).join('');
     const asmRow = assembly ? `<div class="row" style="color:#00a87a"><span class="cat">${tr.quoteAssembly}</span><span class="nm">${tr.quoteAssemblyName}</span><span class="pr">€150,00</span></div>` : '';
-    const html = `<!DOCTYPE html><html><head><title>${tr.quoteLbl} — Northern Studio</title><style>body{font-family:Arial,sans-serif;background:#fff;color:#111;padding:2rem;max-width:640px;margin:0 auto;}h1{font-size:1.4rem;margin-bottom:0;}h1 span{color:#00a87a;}.meta{font-family:monospace;font-size:.72rem;color:#666;text-align:right;}.hdr{display:flex;justify-content:space-between;border-bottom:2px solid #00a87a;padding-bottom:10px;margin-bottom:12px;}.stitle{font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:#888;border-bottom:1px solid #ddd;padding-bottom:3px;margin:10px 0 5px;}.row{display:flex;justify-content:space-between;padding:3px 0;border-bottom:1px solid #f0f0f0;font-size:.8rem;}.cat{color:#888;min-width:110px;}.nm{flex:1;padding:0 8px;color:#333;}.pr{font-family:monospace;font-weight:bold;}.total-row{display:flex;justify-content:space-between;padding:8px 0 3px;border-top:2px solid #111;margin-top:6px;font-weight:bold;}.amt{font-family:monospace;font-size:1.1rem;color:#006644;}.sub-row{display:flex;justify-content:space-between;padding:2px 0;font-size:.75rem;color:#666;}.note{font-size:.68rem;color:#999;margin-top:14px;line-height:1.5;border-top:1px solid #eee;padding-top:8px;}</style></head><body><div class="hdr"><div><h1>NORTHERN<span>STUDIO</span></h1><div style="font-size:.7rem;color:#888">northernstudio.be</div></div><div class="meta"><div>${tr.quoteLbl} ${q.qNum}</div><div>${tr.quoteDate}: ${q.dateStr}</div><div>${tr.quoteValid}: ${q.validStr}</div></div></div><div class="stitle">${tr.quoteClient}</div><div style="font-size:.82rem;line-height:1.7;margin-bottom:6px"><strong>${q.naam}</strong><br>${q.email}${q.tel?'<br>'+q.tel:''}${q.stad?'<br>'+q.stad:''}</div><div class="stitle">${tr.quoteConfig}</div>${rows}${asmRow}<div class="sub-row"><span>${tr.quoteSubtotal}</span><span>${fmtEur(q.totalExcl)}</span></div><div class="sub-row"><span>${tr.quoteBTW}</span><span>${fmtEur(q.btw)}</span></div><div class="total-row"><span>${tr.quoteTotal}</span><span class="amt">${fmtEur(q.totalIncl)}</span></div>${q.note?`<div class="stitle">${tr.fNote.replace(' *','').replace(' / Gebruiksdoel','').replace(' / Intended Use','')}</div><div style="font-size:.8rem">${q.note}</div>`:''}<div class="note">${tr.quoteNote}</div></body></html>`;
+    const html = `<!DOCTYPE html><html><head><title>${tr.quoteLbl} — Northern Studio</title><style>body{font-family:Arial,sans-serif;background:#fff;color:#111;padding:2rem;max-width:640px;margin:0 auto;}h1{font-size:1.4rem;margin-bottom:0;}h1 span{color:#00a87a;}.meta{font-family:monospace;font-size:.72rem;color:#666;text-align:right;}.hdr{display:flex;justify-content:space-between;border-bottom:2px solid #00a87a;padding-bottom:10px;margin-bottom:12px;}.stitle{font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:#888;border-bottom:1px solid #ddd;padding-bottom:3px;margin:10px 0 5px;}.row{display:flex;justify-content:space-between;padding:3px 0;border-bottom:1px solid #f0f0f0;font-size:.8rem;}.cat{color:#888;min-width:110px;}.nm{flex:1;padding:0 8px;color:#333;}.pr{font-family:monospace;font-weight:bold;}.total-row{display:flex;justify-content:space-between;padding:8px 0 3px;border-top:2px solid #111;margin-top:6px;font-weight:bold;}.amt{font-family:monospace;font-size:1.1rem;color:#006644;}.sub-row{display:flex;justify-content:space-between;padding:2px 0;font-size:.75rem;color:#666;}.note{font-size:.68rem;color:#999;margin-top:14px;line-height:1.5;border-top:1px solid #eee;padding-top:8px;}</style></head><body><div class="hdr"><div><h1>NORTHERN<span>STUDIO</span></h1><div style="font-size:.7rem;color:#888">northernstudio.be</div></div><div class="meta"><div>${tr.quoteLbl} ${q.qNum}</div><div>${tr.quoteDate}: ${q.dateStr}</div><div>${tr.quoteValid}: ${q.validStr}</div></div></div><div class="stitle">${tr.quoteClient}</div><div style="font-size:.82rem;line-height:1.7;margin-bottom:6px"><strong>${q.naam}</strong><br>${q.email}${q.tel?'<br>'+q.tel:''}${q.address?'<br>'+q.address:''}${q.postal||q.stad?'<br>'+[q.postal,q.stad].filter(Boolean).join(' '):''}${q.country?'<br>'+q.country:''}</div><div class="stitle">${tr.quoteConfig}</div>${rows}${asmRow}<div class="sub-row"><span>${tr.quoteSubtotal}</span><span>${fmtEur(q.totalExcl)}</span></div><div class="sub-row"><span>${tr.quoteBTW}</span><span>${fmtEur(q.btw)}</span></div><div class="total-row"><span>${tr.quoteTotal}</span><span class="amt">${fmtEur(q.totalIncl)}</span></div>${q.note?`<div class="stitle">${tr.fNote.replace(' *','').replace(' / Gebruiksdoel','').replace(' / Intended Use','')}</div><div style="font-size:.8rem">${q.note}</div>`:''}<div class="note">${tr.quoteNote}</div></body></html>`;
     const w = window.open('','_blank','width=700,height=900');
     if (w) { w.document.write(html); w.document.close(); setTimeout(() => w.print(), 500); }
+  }
+
+  async function handleCheckout() {
+    if (!quoteData || isPaying) return;
+    const q = quoteData;
+    setIsPaying(true);
+    try {
+      const buildSummary = q.partsList.map((p:any) => `${p.label}: ${p.part.name}`).join(' | ');
+      const response = await fetch('/api/create-checkout-session', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          productName: `Northern Studio Custom PC Build ${q.qNum}`,
+          amount: q.totalIncl,
+          locale: lang,
+          origin: window.location.origin,
+          customer: {
+            name: q.naam,
+            email: q.email,
+            phone: q.tel,
+            address: q.address,
+            postal: q.postal,
+            city: q.stad,
+            country: q.country,
+            quoteNumber: q.qNum,
+          },
+          buildSummary,
+        }),
+      });
+
+      const data = await response.json();
+      if (!response.ok || !data?.url) {
+        throw new Error(data?.error || 'Checkout session could not be created');
+      }
+
+      window.location.href = data.url;
+    } catch (err) {
+      console.error(err);
+      alert(lang === 'nl' ? 'Betaling kon niet worden gestart. Probeer opnieuw.' : 'Payment could not be started. Please try again.');
+      setIsPaying(false);
+    }
   }
 
   const TIER_KEYS = ['budget','mid','high','extreme'] as const;
@@ -941,6 +993,20 @@ export default function PCBuilderPage() {
                   <input id="fStad" className="field-input" type="text" placeholder={tr.fStadP} />
                 </div>
               </div>
+              <div style={{marginBottom:'10px'}}>
+                <label className="field-label">{tr.fAddress}</label>
+                <input id="fAddress" className="field-input" type="text" placeholder={tr.fAddressP} />
+              </div>
+              <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'10px',marginBottom:'10px'}}>
+                <div>
+                  <label className="field-label">{tr.fPostal}</label>
+                  <input id="fPostal" className="field-input" type="text" placeholder={tr.fPostalP} />
+                </div>
+                <div>
+                  <label className="field-label">{tr.fCountry}</label>
+                  <input id="fCountry" className="field-input" type="text" placeholder={tr.fCountryP} defaultValue={lang === 'nl' ? 'België' : 'Belgium'} />
+                </div>
+              </div>
               <div style={{marginBottom:'14px'}}>
                 <label className="field-label">{tr.fNote}</label>
                 <textarea id="fNote" className="field-input" rows={2} placeholder={tr.fNoteP} />
@@ -980,7 +1046,11 @@ export default function PCBuilderPage() {
                   <div className="qd-section-title">{tr.quoteClient}</div>
                   <div style={{fontSize:'.75rem',color:'var(--text2)',lineHeight:1.8}}>
                     <strong style={{color:'var(--text)'}}>{quoteData.naam}</strong><br />
-                    {quoteData.email}{quoteData.tel && <><br />{quoteData.tel}</>}{quoteData.stad && <><br />{quoteData.stad}</>}
+                    {quoteData.email}
+                    {quoteData.tel && <><br />{quoteData.tel}</>}
+                    {quoteData.address && <><br />{quoteData.address}</>}
+                    {(quoteData.postal || quoteData.stad) && <><br />{[quoteData.postal, quoteData.stad].filter(Boolean).join(' ')}</>}
+                    {quoteData.country && <><br />{quoteData.country}</>}
                   </div>
                 </div>
                 <div className="qd-section">
@@ -1020,11 +1090,17 @@ export default function PCBuilderPage() {
                 )}
                 <div className="qd-note">{tr.quoteNote}</div>
               </div>
-              <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:8}}>
-                <button className="modal-cta" onClick={sendEmail} style={{fontSize:'.85rem',padding:10}}>{tr.sendEmail}</button>
-                <button onClick={printQuote} style={{background:'none',border:'1px solid var(--border2)',padding:10,fontFamily:"'Barlow Condensed',sans-serif",fontWeight:700,fontSize:'.85rem',letterSpacing:2,color:'var(--text2)',cursor:'pointer'}}>
-                  {tr.printBtn}
+              <div style={{display:'grid',gap:8}}>
+                <button className="modal-cta" onClick={handleCheckout} style={{fontSize:'.9rem',padding:12}} disabled={isPaying}>
+                  {isPaying ? tr.payingBtn : tr.payBtn}
                 </button>
+                <div style={{fontSize:'.72rem',color:'var(--text3)',lineHeight:1.5,marginTop:-2}}>{tr.payNote}</div>
+                <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:8}}>
+                  <button className="modal-cta" onClick={sendEmail} style={{fontSize:'.85rem',padding:10}}>{tr.sendEmail}</button>
+                  <button onClick={printQuote} style={{background:'none',border:'1px solid var(--border2)',padding:10,fontFamily:"'Barlow Condensed',sans-serif",fontWeight:700,fontSize:'.85rem',letterSpacing:2,color:'var(--text2)',cursor:'pointer'}}>
+                    {tr.printBtn}
+                  </button>
+                </div>
               </div>
               <div style={{marginTop:8,textAlign:'center'}}>
                 <button onClick={() => setModalStep(1)} style={{background:'none',border:'none',color:'var(--text2)',cursor:'pointer',fontSize:'.8rem'}}>{tr.backBtn}</button>
