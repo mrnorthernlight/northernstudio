@@ -947,7 +947,7 @@ export default function PCBuilderPage() {
               </div>
 
               {/* Assembly checkbox */}
-              <label onClick={() => setAssembly(a => !a)} style={{display:'flex',alignItems:'flex-start',gap:10,cursor:'pointer',padding:'10px 12px',background:'var(--panel)',border:`1px solid ${assembly ? 'var(--accent)' : 'var(--border2)'}`,background: assembly ? 'rgba(0,200,150,0.05)' : 'var(--panel)',marginBottom:14,transition:'all .15s'}}>
+              <label onClick={() => setAssembly(a => !a)} style={{display:'flex',alignItems:'flex-start',gap:10,cursor:'pointer',padding:'10px 12px',border:`1px solid ${assembly ? 'var(--accent)' : 'var(--border2)'}`,background: assembly ? 'rgba(0,200,150,0.05)' : 'var(--panel)',marginBottom:14,transition:'all .15s'}}>
                 <input type="checkbox" checked={assembly} onChange={() => {}} style={{accentColor:'var(--accent)',width:16,height:16,cursor:'pointer',flexShrink:0,marginTop:2}} />
                 <span style={{fontSize:'.8rem',color:'var(--text2)',lineHeight:1.4}}>
                   <strong style={{color:'var(--text)',display:'block'}}>{tr.assemblyCheck}</strong>
