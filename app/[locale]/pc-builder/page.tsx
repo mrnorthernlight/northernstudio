@@ -553,7 +553,8 @@ export default function PCBuilderPage() {
         .aurora-top{height:2px;background:linear-gradient(90deg,transparent 0%,#00c896 30%,#00e8b0 50%,#00aacc 70%,transparent 100%);position:sticky;top:0;z-index:201;}
         header{position:sticky;top:2px;z-index:200;background:rgba(6,8,9,0.97);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);box-shadow:0 1px 20px rgba(0,200,150,0.06);height:58px;display:flex;align-items:center;justify-content:space-between;padding:0 1.5rem;}
         .logo{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.6rem;letter-spacing:1px;color:var(--text);display:flex;align-items:center;gap:8px;}
-        .logo-img{width:38px;height:38px;border-radius:50%;object-fit:cover;border:1.5px solid rgba(0,200,150,0.4);}
+        .logo-badge{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:1.5px solid rgba(0,200,150,0.4);background:rgba(255,255,255,0.03);box-shadow:0 0 0 1px rgba(255,255,255,0.02) inset, 0 0 18px rgba(0,200,150,0.08);overflow:hidden;flex-shrink:0;}
+        .logo-img{width:22px;height:22px;display:block;object-fit:contain;transform:translateY(1px);}
         .header-right{display:flex;align-items:center;gap:1rem;}
         .build-total{font-family:var(--mono);font-size:.8rem;color:var(--text2);}
         .build-total strong{color:var(--green);font-size:1rem;}
@@ -693,7 +694,9 @@ export default function PCBuilderPage() {
       <div className="aurora-top" />
       <header>
         <div className="logo">
-          <img src="/northern-studio-logo.png" className="logo-img" alt="Northern Studio" />
+          <span className="logo-badge">
+            <img src="/northern-studio-logo.png" className="logo-img" alt="Northern Studio" />
+          </span>
           <span style={{color:'var(--silver)',fontSize:'1.15rem',letterSpacing:2}}>NORTHERN</span>
           <span style={{color:'var(--accent)',fontSize:'1.15rem',letterSpacing:2}}>STUDIO</span>
           <span style={{color:'var(--text3)',fontSize:'1.15rem',letterSpacing:1,marginLeft:4,fontWeight:600}}>BUILDER</span>
