@@ -1,37 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Northern Studio
 
-## Getting Started
+The public website for Northern Studio, a technology and product company. Dutch is the primary language (`/`). English is available under `/en`. The previous PC-builder site remains on `main` and on the tag `legacy-site-backup`.
 
-First, run the development server:
+## Develop
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+npm run lint
+npm run build
+npm test
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+`npm test` checks that the Dutch and English message files share a structure, then runs the Playwright smoke tests against `next start`. Build first. Install the browser once with `npx playwright install chromium`.
 
-## Learn More
+## Languages
 
-To learn more about Next.js, take a look at the following resources:
+Active locales are `nl` (unprefixed, `lang="nl-BE"`) and `en`. French and German paths are drafted in `i18n/pathnames.ts` and are not routed. To add one: write `messages/<locale>.json` by hand, add the locale in `i18n/locales.ts` and `i18n/routing.ts`, and merge that locale's paths into `pathnames`. There is no machine-translation widget and no locale cookie. The URL is the language.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Forms and email
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+`/api/contact` and `/api/interest` validate on the server, ignore a filled honeypot, and rate-limit by IP (8 requests per 10 minutes, in memory on the server process). They work with no external service.
 
-## Deploy on Vercel
+To forward messages, set all three variables and redeploy. See `.env.example`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `RESEND_API_KEY`
+- `CONTACT_TO_EMAIL` — inbox that receives enquiries
+- `CONTACT_FROM_EMAIL` — a sender on a domain verified in Resend, for example `Northern Studio <notifications@your-verified-domain>`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-"# northernstudio" 
+If any value is missing, a valid form is accepted and the page says it was not forwarded. Do not commit real keys.
+
+The in-memory limit is per server instance. It is not a global limit across many serverless isolates.
+
+## Legal placeholders
+
+The footer and the legal pages show `[TODO: …]` for the legal name, KBO/BCE number, address and contact email. Do not replace them with guesses.
+
+## Canonical host
+
+Canonical URLs and the sitemap use `https://northernstudio.be`. This repository change does not alter DNS, nameservers or the production domain.
