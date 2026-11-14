@@ -42,7 +42,7 @@ export function SiteShell({ children, footer }: { children: ReactNode; footer: R
       <a className="skip-link" href="#content">
         {t("skip")}
       </a>
-      <header className="sticky top-0 z-40 border-b border-line bg-field/90 backdrop-blur-md">
+      <header className="sticky top-0 z-40 border-b border-white/10">
         <div className="wrap flex min-h-16 items-center justify-between gap-4 py-2">
           <Link href="/" className="flex items-center gap-3 text-ink" aria-label={t("home")}>
             <Mark />
@@ -77,7 +77,7 @@ export function SiteShell({ children, footer }: { children: ReactNode; footer: R
             </button>
           </div>
         </div>
-        <div id="site-menu" hidden={!open} className="min-[1100px]:hidden">
+        <div id="site-menu" hidden={!open} className="border-t border-white/10 bg-[#05060a]/92 backdrop-blur-xl min-[1100px]:hidden">
           <nav aria-label={t("primary")} className="wrap flex flex-col gap-1 py-6">
             {nav.map((item) => (
               <Link key={item.href} href={item.href} className="font-serif text-4xl leading-tight text-ink no-underline" aria-current={pathname === item.href ? "page" : undefined} onClick={() => setOpen(false)}>

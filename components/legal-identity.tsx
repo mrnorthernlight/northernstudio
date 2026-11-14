@@ -1,28 +1,33 @@
 import { getTranslations } from "next-intl/server";
+import { legalEntity } from "@/lib/site";
 
-export async function LegalIdentity({ tone = "light" }: { tone?: "light" | "dark" }) {
+const published = [
+  ["legalName", legalEntity.legalName],
+  ["kbo", legalEntity.kbo],
+  ["address", legalEntity.address],
+  ["email", legalEntity.email],
+] as const;
+
+export async function LegalIdentity() {
   const t = await getTranslations("legalIdentity");
-  const muted = tone === "dark" ? "text-[#d4d0c6]" : "text-muted";
-
-  const rows = [
-    [t("legalName"), t("legalNameValue")],
-    [t("kbo"), t("kboValue")],
-    [t("address"), t("addressValue")],
-    [t("email"), t("emailValue")],
-  ];
+  const rows = published.filter((entry): entry is [(typeof published)[number][0], string] => Boolean(entry[1]?.trim()));
 
   return (
     <div>
-      <h2 className="font-serif text-2xl font-normal">{t("title")}</h2>
-      <dl className="mt-4 space-y-3 text-sm">
-        {rows.map(([label, value]) => (
-          <div key={label}>
-            <dt className={muted}>{label}</dt>
-            <dd className="todo mt-0.5">{value}</dd>
-          </div>
-        ))}
-      </dl>
-      <p className={`mt-4 text-sm leading-relaxed ${muted}`}>{t("note")}</p>
+      <h2 className="font-display text-2xl font-semibold tracking-tight">{t("title")}</h2>
+      <p className="mt-4 text-sm leading-relaxed text-muted">{t("status")}</p>
+      <p className="mt-3 text-sm leading-relaxed text-muted">{t("operator")}</p>
+      {rows.length > 0 ? (
+        <dl className="mt-4 space-y-3 text-sm">
+          {rows.map(([key, value]) => (
+            <div key={key}>
+              <dt className="text-muted">{t(key)}</dt>
+              <dd className="mt-0.5 text-paper">{value}</dd>
+            </div>
+          ))}
+        </dl>
+      ) : null}
+      <p className="mt-4 text-sm leading-relaxed text-muted">{t("contact")}</p>
     </div>
   );
 }

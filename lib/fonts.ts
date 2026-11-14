@@ -1,18 +1,17 @@
-import { Newsreader, Schibsted_Grotesk } from "next/font/google";
+import { Bricolage_Grotesque, Manrope } from "next/font/google";
 
-export const grotesk = Schibsted_Grotesk({
+export const display = Bricolage_Grotesque({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-grotesk",
+  weight: ["500", "600", "700", "800"],
+  variable: "--font-display",
   display: "swap",
 });
 
-export const newsreader = Newsreader({
+export const body = Manrope({
   subsets: ["latin"],
-  style: ["normal", "italic"],
-  weight: ["400", "500", "600"],
-  variable: "--font-newsreader",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-body",
   display: "swap",
 });
 
-export const fontClassName = `${grotesk.variable} ${newsreader.variable} ${grotesk.className}`;
+export const fontClassName = `${display.variable} ${body.variable} ${body.className}`;

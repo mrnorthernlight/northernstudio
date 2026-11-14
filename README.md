@@ -37,9 +37,9 @@ If any value is missing, a valid form is accepted and the page says it was not f
 
 The in-memory limit is per server instance. It is not a global limit across many serverless isolates.
 
-## Legal placeholders
+## Legal status
 
-The footer and the legal pages show `[TODO: …]` for the legal name, KBO/BCE number, address and contact email. Do not replace them with guesses.
+Northern Studio is not incorporated. There is no KBO/BCE number. The site says so. Optional details live in `legalEntity` in `lib/site.ts` and stay hidden while they are `null`. Do not invent them. A KBO/BCE number must be published before commercial activity starts.
 
 ## Canonical host
 

@@ -31,16 +31,14 @@
     "rights": "All rights reserved."
   },
   "legalIdentity": {
-    "title": "Company",
+    "title": "Project status",
+    "status": "Northern Studio is not yet a registered company and has no enterprise number.",
+    "operator": "The project is being prepared by a private individual in Belgium, under the name Northern Studio.",
+    "contact": "Contact goes through the form on this site. A public email, an address and a legal name will be shown only once they exist.",
     "legalName": "Legal name",
-    "kbo": "Enterprise number (KBO/BCE)",
+    "kbo": "Enterprise number",
     "address": "Address",
-    "email": "Email",
-    "legalNameValue": "[TODO: legal name]",
-    "kboValue": "[TODO: KBO/BCE number]",
-    "addressValue": "[TODO: address]",
-    "emailValue": "[TODO: contact email]",
-    "note": "These details will be filled in once they are formally confirmed. Nothing here is invented."
+    "email": "Email"
   },
   "home": {
     "metaTitle": "Northern Studio — Building What's Next",
@@ -322,7 +320,7 @@
       }
     ],
     "scopeTitle": "Where we work",
-    "scope": "We work from Belgium and build for organisations that look beyond a single local market. Figures, a team and a history will be published only once they are formally settled."
+    "scope": "Northern Studio is a project in preparation, run by a private individual in Belgium. It is not yet a registered company. From there we work for organisations that look beyond a single local market. Figures, a team and a history will be published only once they are formally settled."
   },
   "contact": {
     "metaTitle": "Contact · Northern Studio",
@@ -394,8 +392,8 @@
       {
         "title": "Controller",
         "paragraphs": [
-          "The controller is Northern Studio. The formal identification has not yet been published on this site.",
-          "[TODO: legal name]. [TODO: KBO/BCE number]. [TODO: address]. [TODO: contact email]."
+          "The processing is carried out by a private individual in Belgium, under the project name Northern Studio. There is no company yet and no enterprise number.",
+          "A legal name, an address and a public email will be published on this page once they exist. Until then, reach the project through the contact form."
         ]
       },
       {
@@ -417,14 +415,14 @@
         "title": "How long",
         "paragraphs": [
           "We keep a message until the question has been handled, and no longer than that correspondence, or the news you asked for, requires.",
-          "[TODO: set an exact retention period.]"
+          "An exact retention period will be set before commercial activity starts."
         ]
       },
       {
         "title": "Processors",
         "paragraphs": [
-          "This site is built to be hosted by the provider of the production environment. [TODO: confirm the hosting provider, for example Vercel, and put a processing agreement in place.]",
-          "When email delivery is enabled, the email provider processes the message on our instructions. The intended setup uses Resend. Without keys, nothing is forwarded. [TODO: processing agreement.]",
+          "This site is built to be hosted by the provider of the production environment. The intended host is Vercel. A processing agreement should be in place before commercial activity starts.",
+          "When email delivery is enabled, the email provider processes the message on the project's instructions. The intended provider is Resend. Without keys, nothing is forwarded.",
           "We do not sell data, and we do not pass it on for anyone else's advertising."
         ]
       },
@@ -473,13 +471,13 @@
         "title": "Availability and liability",
         "paragraphs": [
           "We try to keep the site available and accurate. We do not guarantee that it will be uninterrupted or free of errors.",
-          "To the extent the law allows, this informational site is not a basis for loss that follows from merely using it. [TODO: have this wording reviewed by counsel.]"
+          "To the extent the law allows, this informational site is not a basis for loss that follows from merely using it. This text is not advice from a lawyer."
         ]
       },
       {
         "title": "Governing law",
         "paragraphs": [
-          "Northern Studio works from Belgium. [TODO: confirm the governing law and the competent courts.]",
+          "The site is published by a private individual in Belgium, under the name Northern Studio, before a company exists. It is not an offer from a registered company. Belgian law is the setting in which this project is being prepared.",
           "Questions about these terms go through the contact form."
         ]
       }
@@ -504,7 +502,7 @@
         "title": "What a provider may do",
         "paragraphs": [
           "The hosting provider may keep technical logs, including IP addresses, to secure the site and to see abuse. Those are not cookies this site places in your browser.",
-          "[TODO: confirm the provider and how long logs are kept.]"
+          "Which provider that is, and how long logs are kept, will be confirmed before commercial activity starts. The intended host is Vercel."
         ]
       },
       {
@@ -546,7 +544,7 @@
       }
     ],
     "contactCta": "Report a barrier",
-    "emailTodo": "[TODO: email address for accessibility feedback]"
+    "emailTodo": "There is no separate email address yet. Report a barrier through the contact form."
   },
   "notFound": {
     "metaTitle": "Page not found · Northern Studio",

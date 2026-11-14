@@ -31,16 +31,14 @@
     "rights": "Alle rechten voorbehouden."
   },
   "legalIdentity": {
-    "title": "Onderneming",
+    "title": "Projectstatus",
+    "status": "Northern Studio is nog geen geregistreerde onderneming en heeft geen ondernemingsnummer.",
+    "operator": "Het project wordt voorbereid door een privépersoon in België, onder de naam Northern Studio.",
+    "contact": "Contact verloopt via het formulier op deze site. Een publiek e-mailadres, een adres en een wettelijke naam worden pas getoond wanneer ze bestaan.",
     "legalName": "Wettelijke naam",
-    "kbo": "Ondernemingsnummer (KBO/BCE)",
+    "kbo": "Ondernemingsnummer",
     "address": "Adres",
-    "email": "E-mail",
-    "legalNameValue": "[TODO: wettelijke naam]",
-    "kboValue": "[TODO: KBO/BCE-nummer]",
-    "addressValue": "[TODO: adres]",
-    "emailValue": "[TODO: contact-e-mail]",
-    "note": "Deze gegevens worden ingevuld zodra ze formeel vastliggen. Er wordt niets verzonnen."
+    "email": "E-mail"
   },
   "home": {
     "metaTitle": "Northern Studio — Bouwen aan wat volgt",
@@ -322,7 +320,7 @@
       }
     ],
     "scopeTitle": "Werkgebied",
-    "scope": "We werken vanuit België en bouwen voor organisaties die verder kijken dan één lokale markt. Cijfers, team en geschiedenis publiceren we pas wanneer ze formeel vastliggen."
+    "scope": "Northern Studio is een project in voorbereiding, gevoerd door een privépersoon in België. Het is nog geen geregistreerde onderneming. We werken van daaruit voor organisaties die verder kijken dan één lokale markt. Cijfers, team en geschiedenis publiceren we pas wanneer ze formeel vastliggen."
   },
   "contact": {
     "metaTitle": "Contact · Northern Studio",
@@ -394,8 +392,8 @@
       {
         "title": "Verantwoordelijke",
         "paragraphs": [
-          "De verantwoordelijke voor de verwerking is Northern Studio. De formele identificatie is nog niet op deze site gepubliceerd.",
-          "[TODO: wettelijke naam]. [TODO: KBO/BCE-nummer]. [TODO: adres]. [TODO: contact-e-mail]."
+          "De verwerking gebeurt door een privépersoon in België, onder de projectnaam Northern Studio. Er is nog geen vennootschap en geen ondernemingsnummer.",
+          "Een wettelijke naam, een adres en een publiek e-mailadres worden op deze pagina gezet zodra ze bestaan. Tot dan bereikt u het project via het contactformulier."
         ]
       },
       {
@@ -416,15 +414,15 @@
       {
         "title": "Hoe lang",
         "paragraphs": [
-          "We houden een bericht bij tot de vraag is afgehandeld, en niet langer dan nodig is voor die briefwisseling of voor het nieuws dat u hebt gevraagd.",
-          "[TODO: exacte bewaartermijn laten vastleggen.]"
+          "We houden een bericht bij tot de vraag is afgehandeld, en niet langer dan die briefwisseling of het nieuws dat u hebt gevraagd nodig heeft.",
+          "Een precieze bewaartermijn wordt vastgelegd voor er commerciële activiteit start."
         ]
       },
       {
         "title": "Verwerkers",
         "paragraphs": [
-          "Deze site is gebouwd om gehost te worden bij de provider van de productieomgeving. [TODO: hostingprovider bevestigen, bijvoorbeeld Vercel, en de verwerkersovereenkomst vastleggen.]",
-          "Als e-mailbezorging is ingeschakeld, verwerkt de e-mailprovider het bericht in onze opdracht. In de voorziene opzet is dat Resend. Zonder sleutels wordt er niets doorgestuurd. [TODO: verwerkersovereenkomst.]",
+          "Deze site is gebouwd om gehost te worden bij de provider van de productieomgeving. De beoogde host is Vercel. Een verwerkersovereenkomst hoort vast te liggen voor er commerciële activiteit start.",
+          "Als e-mailbezorging is ingeschakeld, verwerkt de e-mailprovider het bericht in opdracht van het project. De beoogde provider is Resend. Zonder sleutels wordt er niets doorgestuurd.",
           "We verkopen geen gegevens en geven ze niet door voor reclame van derden."
         ]
       },
@@ -473,13 +471,13 @@
         "title": "Beschikbaarheid en aansprakelijkheid",
         "paragraphs": [
           "We proberen de site beschikbaar en juist te houden. We garanderen niet dat ze ononderbroken of foutloos is.",
-          "Voor zover de wet dat toelaat, is deze informatieve site geen grond voor schade die volgt uit het loutere gebruik ervan. [TODO: laat deze formulering door een jurist nakijken.]"
+          "Voor zover de wet dat toelaat, is deze informatieve site geen grond voor schade die volgt uit het loutere gebruik ervan. De tekst is geen advies van een advocaat."
         ]
       },
       {
         "title": "Toepasselijk recht",
         "paragraphs": [
-          "Northern Studio werkt vanuit België. [TODO: laat het toepasselijk recht en de bevoegde rechtbank bevestigen.]",
+          "De site wordt gepubliceerd door een privépersoon in België, onder de naam Northern Studio, nog voor er een vennootschap is. Ze is geen aanbod van een geregistreerde onderneming. Het Belgische recht is het kader waarin dit project wordt voorbereid.",
           "Vragen over deze voorwaarden stelt u via het contactformulier."
         ]
       }
@@ -504,7 +502,7 @@
         "title": "Wat een provider kan doen",
         "paragraphs": [
           "De hostingprovider kan technische logboeken bijhouden, waaronder IP-adressen, om de site te beveiligen en misbruik te zien. Dat zijn geen cookies die deze site in uw browser zet.",
-          "[TODO: provider en bewaartermijn van logboeken bevestigen.]"
+          "Welke provider dat is en hoe lang logboeken blijven, wordt bevestigd voor er commerciële activiteit start. De beoogde host is Vercel."
         ]
       },
       {
@@ -546,7 +544,7 @@
       }
     ],
     "contactCta": "Meld een hindernis",
-    "emailTodo": "[TODO: e-mailadres voor toegankelijkheidsfeedback]"
+    "emailTodo": "Er is nog geen apart e-mailadres. Meld een hindernis via het contactformulier."
   },
   "notFound": {
     "metaTitle": "Pagina niet gevonden · Northern Studio",

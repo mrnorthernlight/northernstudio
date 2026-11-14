@@ -6,8 +6,8 @@ export default function GlobalError({ reset }: { error: Error & { digest?: strin
       <body
         style={{
           margin: 0,
-          background: "#e8e6e0",
-          color: "#141614",
+          background: "#05060a",
+          color: "#f6f3ec",
           fontFamily: "Georgia, 'Times New Roman', serif",
           padding: "12vh 8vw",
         }}
@@ -19,8 +19,8 @@ export default function GlobalError({ reset }: { error: Error & { digest?: strin
           onClick={() => reset()}
           style={{
             marginTop: "1.5rem",
-            background: "#143d2c",
-            color: "#f6f5f1",
+            background: "#8eebff",
+            color: "#061018",
             border: 0,
             minHeight: "2.75rem",
             padding: "0.7rem 1.1rem",
