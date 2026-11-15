@@ -1,0 +1,563 @@
+{
+  "meta": {
+    "titleDefault": "Northern Studio — Bouwen aan wat volgt",
+    "description": "Northern Studio bouwt intelligente software, AI-gedreven systemen en technologie om bedrijven vooruit te helpen."
+  },
+  "nav": {
+    "aiSystems": "AI-systemen",
+    "software": "Software",
+    "automation": "Automatisering",
+    "products": "Producten",
+    "research": "Onderzoek",
+    "about": "Over",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Sluiten",
+    "language": "Taal",
+    "primary": "Hoofdnavigatie",
+    "home": "Northern Studio, beginpagina",
+    "skip": "Ga naar de inhoud"
+  },
+  "footer": {
+    "blurb": "Een technologie- en productbedrijf. Intelligente software, AI-gedreven systemen en technologie om bedrijven vooruit te helpen.",
+    "brandLine": "Building What's Next.",
+    "navLabel": "Voettekst",
+    "legalLabel": "Juridisch",
+    "cookiesNote": "Deze site plaatst geen cookies.",
+    "privacy": "Privacy",
+    "terms": "Voorwaarden",
+    "cookies": "Cookies",
+    "accessibility": "Toegankelijkheid",
+    "rights": "Alle rechten voorbehouden."
+  },
+  "legalIdentity": {
+    "title": "Projectstatus",
+    "status": "Northern Studio is nog geen geregistreerde onderneming en heeft geen ondernemingsnummer.",
+    "operator": "Het project wordt voorbereid door een privépersoon in België, onder de naam Northern Studio.",
+    "contact": "Contact verloopt via het formulier op deze site. Een publiek e-mailadres, een adres en een wettelijke naam worden pas getoond wanneer ze bestaan.",
+    "legalName": "Wettelijke naam",
+    "kbo": "Ondernemingsnummer",
+    "address": "Adres",
+    "email": "E-mail"
+  },
+  "home": {
+    "metaTitle": "Northern Studio — Bouwen aan wat volgt",
+    "metaDescription": "Northern Studio bouwt intelligente software, AI-gedreven systemen en technologie om bedrijven vooruit te helpen.",
+    "eyebrow": "Technologie- en productbedrijf",
+    "titleLead": "Bouwen aan",
+    "titleEmphasis": "wat volgt.",
+    "lede": "We bouwen intelligente software, AI-gedreven systemen en technologie om bedrijven vooruit te helpen.",
+    "contentsLabel": "Inhoud",
+    "positionLink": "De positie",
+    "contactLink": "Schrijf ons",
+    "where": "België",
+    "channel": "Schriftelijk contact",
+    "positionKicker": "Positie",
+    "positionTitle": "Eigen software. Eigen richting.",
+    "positionP1": "Northern Studio is een technologie- en productbedrijf. We ontwerpen en bouwen software waarvan we de koers en de intellectuele eigendom kunnen dragen.",
+    "positionP2": "Diensten — intelligente systemen, platformen en automatisering — ondersteunen de eerste inkomsten. Producten zijn de kern op lange termijn.",
+    "band": "Diensten dragen de vroege inkomsten. Producten vormen de kern op lange termijn.",
+    "principlesKicker": "Uitgangspunten",
+    "principlesTitle": "Vier lijnen waar we het werk aan toetsen.",
+    "principles": [
+      {
+        "title": "Eigendom",
+        "text": "We bouwen software waar we achter kunnen staan, met inbegrip van de rechten die daarbij horen."
+      },
+      {
+        "title": "Helderheid",
+        "text": "We zeggen wat een systeem doet, waar het stopt, en wat het niet belooft."
+      },
+      {
+        "title": "Zorg",
+        "text": "Beveiliging, toegankelijkheid en onderhoud horen bij het werk, niet bij een latere fase."
+      },
+      {
+        "title": "Ambitie met maat",
+        "text": "We mikken ver, en we leveren in stappen die een organisatie kan dragen."
+      }
+    ],
+    "researchKicker": "Onderzoek",
+    "researchTitle": "We houden open wat we nog niet goed genoeg kunnen bouwen.",
+    "researchText": "Geen publicatielijst en geen resultaten die we nog niet kunnen tonen. Wel een vaste plek voor de vragen die het werk scherp houden.",
+    "researchCta": "Lees de richting",
+    "closeTitle": "Een vraag volstaat.",
+    "closeText": "Contact verloopt schriftelijk. Geen telefoon, geen verplichte afspraak.",
+    "closeCta": "Naar contact",
+    "index": {
+      "ai": {
+        "title": "AI-systemen",
+        "text": "Intelligente systemen, agenten en toepassingen die in een echte werking passen."
+      },
+      "software": {
+        "title": "Software",
+        "text": "Platformen en digitale producten, gebouwd als software die blijft."
+      },
+      "automation": {
+        "title": "Automatisering",
+        "text": "Werkstromen en koppelingen, met een spoor dat iemand kan volgen."
+      },
+      "products": {
+        "title": "Producten",
+        "text": "Eigen software. Wat nog geen naam heeft, staat als plaats, niet als product."
+      }
+    }
+  },
+  "ai": {
+    "metaTitle": "AI-systemen · Northern Studio",
+    "metaDescription": "Hoe Northern Studio intelligente systemen, AI-agenten en toepassingen voor bedrijven benadert: met een doel, grenzen en menselijke controle.",
+    "eyebrow": "AI-systemen",
+    "catalog": "01",
+    "title": "Intelligente systemen, met grenzen.",
+    "lede": "We ontwerpen AI als software: met een doel, een context, een manier om bij te sturen, en een plek in de organisatie die ermee werkt.",
+    "figureLabel": "Fig. 01",
+    "figureTitle": "Lagen van een systeem",
+    "figureIntro": "Een intelligent systeem is een stapel, geen los model. Elke laag heeft een taak.",
+    "layers": [
+      { "title": "Interface", "text": "Waar iemand het systeem ontmoet, en waar duidelijk is wat het wel en niet doet." },
+      { "title": "Orkestratie", "text": "Welke stap wanneer volgt, welke instrumenten beschikbaar zijn, en wanneer gestopt wordt." },
+      { "title": "Modellen", "text": "De modellen die een taak uitvoeren. Ze zijn een onderdeel, niet het hele systeem." },
+      { "title": "Gegevens en grenzen", "text": "Welke informatie mag worden gebruikt, wat buiten het bereik blijft, en hoe dat wordt afgedwongen." },
+      { "title": "Menselijke controle", "text": "Waar een persoon beslist, corrigeert of een uitkomst tegenhoudt." }
+    ],
+    "sections": [
+      {
+        "title": "Wat we ermee bedoelen",
+        "paragraphs": [
+          "Een intelligent systeem helpt bij werk dat anders handmatig, traag of versnipperd verloopt: teksten ordenen, een volgende stap voorstellen, een uitzondering signaleren, een medewerker door een procedure leiden.",
+          "We beginnen bij dat werk. Het model komt daarna, en alleen als het de taak echt draagt. Een demonstratie is geen systeem."
+        ]
+      },
+      {
+        "title": "Aanpak",
+        "paragraphs": [
+          "We beschrijven het doel, de gebruikers en de gevallen waarin het systeem moet zwijgen. Daarna pas de architectuur: gegevens, integraties, evaluatie en de plek van de mens.",
+          "Ingebruikname is een beslissing, geen schakelaar. We spreken af hoe het systeem wordt bekeken wanneer het in de echte werking staat."
+        ]
+      },
+      {
+        "title": "Agenten",
+        "paragraphs": [
+          "Een agent is software die een doel krijgt, instrumenten mag gebruiken, en binnen grenzen handelt. Die instrumenten zijn gewone systemen: een dossier, een inbox, een database, een API.",
+          "Zonder een expliciete stop, een spoor van wat er gebeurde en een eigenaar in de organisatie is een agent geen hulpmiddel maar een risico. We bouwen die drie mee."
+        ]
+      },
+      {
+        "title": "In een bedrijf",
+        "paragraphs": [
+          "De meeste waarde zit niet in een losse chat, maar in een taak die al bestaat: klantinformatie, interne kennis, operationele opvolging, een productfunctie die intelligenter wordt.",
+          "We doen geen uitspraken over besparingen of nauwkeurigheid die we niet in de concrete context kunnen onderbouwen. Wat het systeem niet mag beslissen, hoort in het ontwerp."
+        ]
+      }
+    ]
+  },
+  "software": {
+    "metaTitle": "Software · Northern Studio",
+    "metaDescription": "Engineering, platformen en digitale producten. Northern Studio bouwt software die een organisatie kan dragen, met eigendom dat schriftelijk wordt vastgelegd.",
+    "eyebrow": "Software",
+    "catalog": "02",
+    "title": "Software die een bedrijf kan dragen.",
+    "lede": "We bouwen platformen en digitale producten: van de eerste bruikbare versie tot een systeem dat anderen kunnen begrijpen, beveiligen en verderzetten.",
+    "figureLabel": "Fig. 02",
+    "figureTitle": "Hoe een bouw verloopt",
+    "figureIntro": "Vier momenten. Geen van hen is een fase die we overslaan om sneller te lijken.",
+    "phases": [
+      { "title": "Richten", "text": "Doel, gebruikers, grenzen, en wat bewust niet wordt gebouwd." },
+      { "title": "Vormgeven", "text": "Structuur, interface en het model van de gegevens, voordat het breed wordt uitgewerkt." },
+      { "title": "Bouwen", "text": "Implementatie, tests, toegankelijkheid en beveiliging als deel van het werk." },
+      { "title": "Dragen", "text": "Oplevering, documentatie, en een afspraak over wie de software daarna draagt." }
+    ],
+    "sections": [
+      {
+        "title": "Engineering",
+        "paragraphs": [
+          "We schrijven software die leesbaar blijft: duidelijke grenzen tussen onderdelen, types waar ze fouten vroeg vangen, en tests op het gedrag dat niet mag breken.",
+          "Beveiliging en toegankelijkheid zijn geen controle achteraf. Een systeem dat alleen de auteur begrijpt, is niet af."
+        ]
+      },
+      {
+        "title": "Platformen en producten",
+        "paragraphs": [
+          "Een platform is de software waarop een bedrijf zijn eigen werking zet: accounts, rechten, gegevens, integraties, een interface die het werk volgt.",
+          "Een digitaal product is diezelfde ernst, met een gebruiker buiten het projectteam. We ontwerpen de eerste versie klein genoeg om echt te gebruiken, en stevig genoeg om te groeien."
+        ]
+      },
+      {
+        "title": "Eigendom",
+        "paragraphs": [
+          "Voor onze eigen producten blijft de software bij Northern Studio. Dat is de kern van het bedrijf.",
+          "Bij opdrachten leggen we intellectuele eigendom schriftelijk vast. Deze website is geen overeenkomst en wijst eigendom niet stilzwijgend toe."
+        ]
+      }
+    ]
+  },
+  "automation": {
+    "metaTitle": "Automatisering · Northern Studio",
+    "metaDescription": "Intelligente werkstromen, integraties en operationele automatisering die uitlegbaar blijft en door een mens gestopt kan worden.",
+    "eyebrow": "Automatisering",
+    "catalog": "03",
+    "title": "Automatisering die uitlegbaar blijft.",
+    "lede": "We verbinden systemen en halen herhalende stappen uit handen. Het verloop blijft iets dat een mens kan volgen, en stoppen.",
+    "figureLabel": "Fig. 03",
+    "figureTitle": "Een werkstroom",
+    "figureIntro": "Vier punten. Het laatste is geen bijlage: zonder spoor is automatisering niet te verantwoorden.",
+    "steps": [
+      { "title": "Signaal", "text": "Een gebeurtenis of een gegeven dat binnenkomt. Niet alles wat binnenkomt, is een opdracht." },
+      { "title": "Regel", "text": "Wat er mag gebeuren, wat een mens moet zien, en wat nooit automatisch mag." },
+      { "title": "Systeem", "text": "De koppeling of de taak: een ander systeem, een bericht, een bijwerking in een dossier." },
+      { "title": "Spoor", "text": "Een naleesbaar spoor van wat er gebeurde, zodat iemand het kan nagaan." }
+    ],
+    "sections": [
+      {
+        "title": "Werkstromen",
+        "paragraphs": [
+          "Veel operationeel werk is een reeks overdrachten: een formulier, een controle, een update in een tweede systeem, een bericht naar de persoon die verder moet.",
+          "We automatiseren die overdracht waar de regel helder is. Waar de regel dat niet is, blijft de stap bij een mens. Dat is een ontwerpkeuze, geen rest."
+        ]
+      },
+      {
+        "title": "Integraties",
+        "paragraphs": [
+          "Systemen praten zelden vanzelf met elkaar. We bouwen de koppeling expliciet: welke velden, welke fouten, wat er gebeurt als de andere kant niet antwoordt.",
+          "Een integratie die stil faalt, is geen automatisering. Fouten worden zichtbaar voor wie ze moet herstellen."
+        ]
+      },
+      {
+        "title": "Controle",
+        "paragraphs": [
+          "Elke automatisering heeft een eigenaar en een manier om ze stil te leggen. Rechten blijven smal: het systeem krijgt alleen de toegang die de taak nodig heeft.",
+          "We beloven niet dat handwerk verdwijnt. We beloven dat het resterende werk duidelijker is, en dat het automatische deel uitlegbaar blijft."
+        ]
+      }
+    ]
+  },
+  "products": {
+    "metaTitle": "Producten · Northern Studio",
+    "metaDescription": "Eigen software en SaaS van Northern Studio. Gereserveerde plaatsen, duidelijk gemarkeerd als in ontwikkeling of binnenkort. Nog geen productnamen.",
+    "eyebrow": "Producten",
+    "catalog": "04",
+    "title": "Plaatsen, nog geen namen.",
+    "lede": "Eigen software en SaaS-platformen zijn de kern op lange termijn. Hieronder staan gereserveerde plaatsen. Het zijn geen aangekondigde producten.",
+    "honesty": "Een plaats krijgt een naam pas wanneer Northern Studio dat product publiek maakt. Tot dan is er geen functielijst, geen lancering en geen klantverhaal.",
+    "slotsLabel": "Gereserveerde plaatsen",
+    "slots": [
+      {
+        "label": "Plaats 01",
+        "status": "In ontwikkeling",
+        "text": "Gereserveerd voor eigen software. Nog geen naam. In ontwikkeling betekent dat eraan gewerkt wordt, niet dat het aangekondigd is."
+      },
+      {
+        "label": "Plaats 02",
+        "status": "In ontwikkeling",
+        "text": "Een tweede gereserveerde plaats, eveneens zonder naam en zonder publieke omschrijving."
+      },
+      {
+        "label": "Plaats 03",
+        "status": "Binnenkort",
+        "text": "Binnenkort betekent hier alleen dat de plaats openstaat. Het is geen datum en geen product."
+      }
+    ],
+    "interestTitle": "Laat het weten wanneer er nieuws is.",
+    "interestText": "Een kort bericht volstaat. We schrijven u alleen over een product dat u zelf hebt gevraagd."
+  },
+  "research": {
+    "metaTitle": "Onderzoek en innovatie · Northern Studio",
+    "metaDescription": "De vragen die Northern Studio openhoudt over betrouwbare intelligente systemen, eenvoudige producten en controleerbare automatisering.",
+    "eyebrow": "Onderzoek en innovatie",
+    "catalog": "05",
+    "title": "Vragen die we openhouden.",
+    "lede": "Dit is geen lab, geen publicatielijst en geen partnerschap. Het is de korte lijst van vragen waar het volgende werk aan wordt getoetst.",
+    "inquiriesTitle": "Richting",
+    "inquiries": [
+      {
+        "title": "Betrouwbaarheid in gebruik",
+        "text": "Hoe blijft een intelligent systeem betrouwbaar zodra het niet meer in een demonstratie staat, maar in een echte werking?"
+      },
+      {
+        "title": "Eenvoud die meegroeit",
+        "text": "Hoe blijft een product eenvoudig terwijl de mogelijkheden toenemen, in plaats van een scherm vol uitzonderingen te worden?"
+      },
+      {
+        "title": "Controleerbare automatisering",
+        "text": "Hoe blijft automatisering iets waar de verantwoordelijke mens nog op kan ingrijpen, zonder het spoor te verliezen?"
+      },
+      {
+        "title": "Software die blijft",
+        "text": "Welke infrastructuur, documentatie en eigendom heeft software nodig om langer mee te gaan dan de eerste oplevering?"
+      }
+    ],
+    "closeTitle": "Niets wordt hier als resultaat voorgesteld.",
+    "closeText": "Wanneer er iets is dat we publiek kunnen maken, verschijnt het op deze plaats. Tot dan beschrijven we de richting, niet de uitkomst."
+  },
+  "about": {
+    "metaTitle": "Over · Northern Studio",
+    "metaDescription": "Missie, visie en uitgangspunten van Northern Studio, een technologie- en productbedrijf dat vanuit België werkt.",
+    "eyebrow": "Over",
+    "catalog": "06",
+    "title": "Een studio voor wat we zelf kunnen dragen.",
+    "lede": "Northern Studio bouwt intelligente software, AI-gedreven systemen en technologie om bedrijven vooruit te helpen. De lange lijn zijn producten waarvan we de eigendom dragen.",
+    "missionTitle": "Missie",
+    "mission": "Software en systemen maken die een bedrijf echt vooruit helpen, en die stevig genoeg zijn om eigendom van te zijn — het onze, of dat van de opdrachtgever wanneer dat schriftelijk zo is afgesproken.",
+    "visionTitle": "Visie",
+    "vision": "Een internationaal technologie- en productbedrijf. Diensten financieren het vroege werk. Eigen software bepaalt de richting daarna. We groeien door wat we kunnen onderhouden, niet door wat we kunnen aankondigen.",
+    "principlesTitle": "Uitgangspunten",
+    "principles": [
+      {
+        "title": "Eigendom",
+        "text": "We behandelen code, ontwerp en gegevens als iets met een eigenaar. Voor eigen producten zijn wij dat. Voor opdrachten staat het op papier."
+      },
+      {
+        "title": "Helderheid",
+        "text": "We beschrijven grenzen even zorgvuldig als mogelijkheden. Een systeem dat alles lijkt te kunnen, is slecht uitgelegd."
+      },
+      {
+        "title": "Zorg",
+        "text": "Beveiliging, toegankelijkheid, privacy en onderhoud zijn onderdeel van de bouw. Ze worden niet als optie achteraf aangeboden."
+      },
+      {
+        "title": "Ambitie met maat",
+        "text": "Het werk mag ver reiken. De stap die we zetten, moet een organisatie kunnen dragen, begrijpen en stopzetten."
+      }
+    ],
+    "scopeTitle": "Werkgebied",
+    "scope": "Northern Studio is een project in voorbereiding, gevoerd door een privépersoon in België. Het is nog geen geregistreerde onderneming. We werken van daaruit voor organisaties die verder kijken dan één lokale markt. Cijfers, team en geschiedenis publiceren we pas wanneer ze formeel vastliggen."
+  },
+  "contact": {
+    "metaTitle": "Contact · Northern Studio",
+    "metaDescription": "Schrijf Northern Studio. Contact verloopt schriftelijk, via een bericht of een zakelijke vraag. Geen telefoon en geen verplichte afspraak.",
+    "eyebrow": "Contact",
+    "catalog": "07",
+    "title": "Schrijf ons.",
+    "lede": "We antwoorden schriftelijk. Een telefoonnummer of een afspraak is niet nodig om ons te bereiken.",
+    "messageTitle": "Bericht",
+    "messageText": "Voor een vraag, een opmerking of een kennismaking.",
+    "businessTitle": "Zakelijke vraag",
+    "businessText": "Voor een mogelijke opdracht, een samenwerking of een vraag over toekomstige producten."
+  },
+  "forms": {
+    "name": "Naam",
+    "email": "E-mailadres",
+    "organisation": "Organisatie",
+    "message": "Bericht",
+    "note": "Opmerking",
+    "topic": "Onderwerp",
+    "slot": "Plaats",
+    "optional": "optioneel",
+    "required": "verplicht",
+    "topicPlaceholder": "Kies een onderwerp",
+    "topics": {
+      "ai": "AI-systemen",
+      "software": "Software",
+      "automation": "Automatisering",
+      "products": "Producten",
+      "other": "Iets anders"
+    },
+    "slots": {
+      "general": "Geen specifieke plaats",
+      "slot-01": "Plaats 01",
+      "slot-02": "Plaats 02",
+      "slot-03": "Plaats 03"
+    },
+    "messageSubmit": "Verstuur het bericht",
+    "businessSubmit": "Verstuur de vraag",
+    "interestSubmit": "Houd me op de hoogte",
+    "sending": "Verzenden…",
+    "successTitle": "Ontvangen",
+    "successEmail": "Uw bericht is verzonden. We antwoorden schriftelijk.",
+    "successAccepted": "Uw bericht is geldig ontvangen in deze omgeving. E-mailbezorging is hier niet ingeschakeld, dus het werd niet doorgestuurd.",
+    "errorSummary": "Het formulier is nog niet verzonden. Controleer de gemarkeerde velden.",
+    "rate": "Er zijn te veel berichten verstuurd. Probeer het later opnieuw.",
+    "delivery": "Het bericht kon niet worden doorgestuurd. Probeer het later opnieuw.",
+    "invalidBanner": "Het formulier is niet verzonden. Controleer de verplichte velden en probeer opnieuw.",
+    "privacy": "We gebruiken deze gegevens alleen om op uw bericht te antwoorden.",
+    "privacyLink": "Privacyverklaring",
+    "interestPrivacy": "We gebruiken uw e-mailadres alleen voor het productnieuws dat u vraagt. U kunt dat later schriftelijk stoppen.",
+    "honeypot": "Website",
+    "errors": {
+      "required": "Dit veld is verplicht.",
+      "email": "Vul een geldig e-mailadres in.",
+      "short": "Schrijf iets meer, zodat we u kunnen antwoorden.",
+      "long": "Dit is te lang. Kort het in.",
+      "invalid": "Kies een geldige waarde."
+    }
+  },
+  "privacy": {
+    "metaTitle": "Privacy · Northern Studio",
+    "metaDescription": "Hoe Northern Studio omgaat met gegevens die u via de formulieren op deze website achterlaat.",
+    "eyebrow": "Juridisch",
+    "title": "Privacy",
+    "lede": "Deze website verzamelt weinig. Wat we vragen, dient om u schriftelijk te antwoorden of om productnieuws te sturen dat u zelf hebt gevraagd.",
+    "updated": "Laatst bijgewerkt: november 2026.",
+    "sections": [
+      {
+        "title": "Verantwoordelijke",
+        "paragraphs": [
+          "De verwerking gebeurt door een privépersoon in België, onder de projectnaam Northern Studio. Er is nog geen vennootschap en geen ondernemingsnummer.",
+          "Een wettelijke naam, een adres en een publiek e-mailadres worden op deze pagina gezet zodra ze bestaan. Tot dan bereikt u het project via het contactformulier."
+        ]
+      },
+      {
+        "title": "Welke gegevens",
+        "paragraphs": [
+          "Via het contactformulier: naam, e-mailadres, het bericht, en — als u die invult — organisatie en onderwerp.",
+          "Via het interesseformulier: e-mailadres, de gekozen plaats, en — als u die invult — naam en een opmerking.",
+          "De server kan uw IP-adres kort in het geheugen houden om misbruik van de formulieren te beperken. Dat wordt niet als cookie bewaard en niet aan een profiel gekoppeld. Er is geen analyse- of advertentietracker."
+        ]
+      },
+      {
+        "title": "Waarom",
+        "paragraphs": [
+          "We verwerken contactberichten om op uw vraag te antwoorden. Dat is het gerechtvaardigd belang van een gewoon zakelijk antwoord, of een stap die u zelf zet door het formulier te versturen.",
+          "We verwerken een interessebericht alleen om u het gevraagde productnieuws te kunnen sturen. U kunt dat schriftelijk stoppen."
+        ]
+      },
+      {
+        "title": "Hoe lang",
+        "paragraphs": [
+          "We houden een bericht bij tot de vraag is afgehandeld, en niet langer dan die briefwisseling of het nieuws dat u hebt gevraagd nodig heeft.",
+          "Een precieze bewaartermijn wordt vastgelegd voor er commerciële activiteit start."
+        ]
+      },
+      {
+        "title": "Verwerkers",
+        "paragraphs": [
+          "Deze site is gebouwd om gehost te worden bij de provider van de productieomgeving. De beoogde host is Vercel. Een verwerkersovereenkomst hoort vast te liggen voor er commerciële activiteit start.",
+          "Als e-mailbezorging is ingeschakeld, verwerkt de e-mailprovider het bericht in opdracht van het project. De beoogde provider is Resend. Zonder sleutels wordt er niets doorgestuurd.",
+          "We verkopen geen gegevens en geven ze niet door voor reclame van derden."
+        ]
+      },
+      {
+        "title": "Uw rechten",
+        "paragraphs": [
+          "U kunt inzage, verbetering of wissing vragen, en bezwaar maken tegen een verwerking die op gerechtvaardigd belang steunt. Dat doet u schriftelijk, via het contactformulier, tot er een bevestigd e-mailadres is.",
+          "U kunt ook een klacht indienen bij de Belgische toezichthouder."
+        ]
+      }
+    ],
+    "complaintBefore": "De toezichthouder is de",
+    "complaintLink": "Gegevensbeschermingsautoriteit",
+    "complaintAfter": "."
+  },
+  "terms": {
+    "metaTitle": "Voorwaarden · Northern Studio",
+    "metaDescription": "Voorwaarden voor het gebruik van de website van Northern Studio. Dit is geen offerte en geen overeenkomst.",
+    "eyebrow": "Juridisch",
+    "title": "Voorwaarden",
+    "lede": "Deze voorwaarden gaan over het gebruik van northernstudio.be. Ze zijn een leesbare afspraak over de site, geen contract voor een opdracht.",
+    "updated": "Laatst bijgewerkt: november 2026.",
+    "sections": [
+      {
+        "title": "De site",
+        "paragraphs": [
+          "De site stelt Northern Studio voor en biedt een manier om schriftelijk contact op te nemen. Niets op deze pagina's is een offerte, een professioneel advies of een belofte over een resultaat.",
+          "Productplaatsen zijn geen aanbod. Een status als 'in ontwikkeling' of 'binnenkort' kondigt geen leverdatum aan."
+        ]
+      },
+      {
+        "title": "Gebruik",
+        "paragraphs": [
+          "U mag de site bekijken en de formulieren gebruiken voor een echte vraag. Geautomatiseerd misbruik, het versturen van andermans gegevens zonder grond, of een poging om de site te verstoren, hoort er niet bij.",
+          "We kunnen een formulier tijdelijk blokkeren als er te veel berichten van hetzelfde adres komen."
+        ]
+      },
+      {
+        "title": "Intellectuele eigendom",
+        "paragraphs": [
+          "Teksten, het merk Northern Studio, het merkteken en de vormgeving van deze site behoren toe aan Northern Studio, tenzij uitdrukkelijk anders vermeld.",
+          "U mag citeren met bronvermelding. U mag de site niet nabouwen alsof ze van iemand anders is."
+        ]
+      },
+      {
+        "title": "Beschikbaarheid en aansprakelijkheid",
+        "paragraphs": [
+          "We proberen de site beschikbaar en juist te houden. We garanderen niet dat ze ononderbroken of foutloos is.",
+          "Voor zover de wet dat toelaat, is deze informatieve site geen grond voor schade die volgt uit het loutere gebruik ervan. De tekst is geen advies van een advocaat."
+        ]
+      },
+      {
+        "title": "Toepasselijk recht",
+        "paragraphs": [
+          "De site wordt gepubliceerd door een privépersoon in België, onder de naam Northern Studio, nog voor er een vennootschap is. Ze is geen aanbod van een geregistreerde onderneming. Het Belgische recht is het kader waarin dit project wordt voorbereid.",
+          "Vragen over deze voorwaarden stelt u via het contactformulier."
+        ]
+      }
+    ]
+  },
+  "cookiesPage": {
+    "metaTitle": "Cookies · Northern Studio",
+    "metaDescription": "Northern Studio plaatst geen cookies op deze website en gebruikt geen cookiebanner.",
+    "eyebrow": "Juridisch",
+    "title": "Cookies",
+    "lede": "Deze website plaatst zelf geen cookies. Er is daarom geen cookiebanner.",
+    "updated": "Laatst bijgewerkt: november 2026.",
+    "sections": [
+      {
+        "title": "Wat er niet is",
+        "paragraphs": [
+          "Geen analysecookies, geen advertenties, geen sociale plug-ins, en geen cookie die uw taal onthoudt. De taal staat in het adres: Nederlands zonder prefix, Engels onder /en.",
+          "De taalkeuze in de navigatie is een gewone link naar de andere versie van dezelfde pagina."
+        ]
+      },
+      {
+        "title": "Wat een provider kan doen",
+        "paragraphs": [
+          "De hostingprovider kan technische logboeken bijhouden, waaronder IP-adressen, om de site te beveiligen en misbruik te zien. Dat zijn geen cookies die deze site in uw browser zet.",
+          "Welke provider dat is en hoe lang logboeken blijven, wordt bevestigd voor er commerciële activiteit start. De beoogde host is Vercel."
+        ]
+      },
+      {
+        "title": "Als dat verandert",
+        "paragraphs": [
+          "Een strikt noodzakelijke cookie wordt pas geplaatst nadat deze pagina is bijgewerkt. Tracking wordt niet toegevoegd zonder dat het hier zichtbaar is."
+        ]
+      }
+    ]
+  },
+  "accessibility": {
+    "metaTitle": "Toegankelijkheid · Northern Studio",
+    "metaDescription": "Toegankelijkheidsverklaring van Northern Studio. De site is gebouwd met WCAG 2.2 niveau AA als doel.",
+    "eyebrow": "Juridisch",
+    "title": "Toegankelijkheid",
+    "lede": "Northern Studio wil dat deze website bruikbaar is met een toetsenbord, een schermlezer en zonder muis, en leesbaar blijft wanneer beweging wordt beperkt.",
+    "updated": "Laatst bijgewerkt: november 2026.",
+    "sections": [
+      {
+        "title": "Doel",
+        "paragraphs": [
+          "We mikken op de Web Content Accessibility Guidelines (WCAG) 2.2, niveau AA. Dat is een doel voor deze site, geen certificaat van een derde."
+        ]
+      },
+      {
+        "title": "Wat er is voorzien",
+        "paragraphs": [
+          "Semantische koppen en landmarks, een skiplink, zichtbare focus, labels bij elk formulierveld, fouten in tekst, en een taalwissel die de pagina echt vertaalt.",
+          "Beweging is beperkt. Wie in het systeem 'verminderde beweging' kiest, krijgt geen paginabeweging en geen lijn die intekent.",
+          "Kleur is niet de enige drager van een status. 'In ontwikkeling' en 'binnenkort' staan in woorden."
+        ]
+      },
+      {
+        "title": "Bekende grenzen",
+        "paragraphs": [
+          "We kennen op dit moment geen obstakel dat we bewust hebben laten staan. Een gegenereerde deelfiguur voor sociale media is een afbeelding met een tekstalternatief; de pagina zelf bevat dezelfde titel als tekst.",
+          "Als u een hindernis tegenkomt, schrijf ons. We behandelen dat als een gewone, ernstige vraag."
+        ]
+      }
+    ],
+    "contactCta": "Meld een hindernis",
+    "emailTodo": "Er is nog geen apart e-mailadres. Meld een hindernis via het contactformulier."
+  },
+  "notFound": {
+    "metaTitle": "Pagina niet gevonden · Northern Studio",
+    "kicker": "404",
+    "title": "Deze pagina bestaat niet.",
+    "text": "Het adres klopt niet, of de pagina staat niet meer op deze plaats.",
+    "home": "Naar de beginpagina",
+    "contact": "Schrijf ons"
+  },
+  "error": {
+    "title": "Er ging iets mis.",
+    "text": "De pagina kon niet worden getoond. Probeer opnieuw, of schrijf ons als het blijft gebeuren.",
+    "retry": "Opnieuw proberen",
+    "home": "Naar de beginpagina"
+  }
+}

@@ -1,0 +1,563 @@
+{
+  "meta": {
+    "titleDefault": "Northern Studio — Building What's Next",
+    "description": "We build intelligent software, AI-powered systems and technology designed to move businesses forward."
+  },
+  "nav": {
+    "aiSystems": "AI systems",
+    "software": "Software",
+    "automation": "Automation",
+    "products": "Products",
+    "research": "Research",
+    "about": "About",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close",
+    "language": "Language",
+    "primary": "Primary",
+    "home": "Northern Studio, home",
+    "skip": "Skip to content"
+  },
+  "footer": {
+    "blurb": "A technology and product company. Intelligent software, AI-powered systems and technology designed to move businesses forward.",
+    "brandLine": "Building What's Next.",
+    "navLabel": "Footer",
+    "legalLabel": "Legal",
+    "cookiesNote": "This site sets no cookies.",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "cookies": "Cookies",
+    "accessibility": "Accessibility",
+    "rights": "All rights reserved."
+  },
+  "legalIdentity": {
+    "title": "Project status",
+    "status": "Northern Studio is not yet a registered company and has no enterprise number.",
+    "operator": "The project is being prepared by a private individual in Belgium, under the name Northern Studio.",
+    "contact": "Contact goes through the form on this site. A public email, an address and a legal name will be shown only once they exist.",
+    "legalName": "Legal name",
+    "kbo": "Enterprise number",
+    "address": "Address",
+    "email": "Email"
+  },
+  "home": {
+    "metaTitle": "Northern Studio — Building What's Next",
+    "metaDescription": "We build intelligent software, AI-powered systems and technology designed to move businesses forward.",
+    "eyebrow": "Technology and product company",
+    "titleLead": "Building",
+    "titleEmphasis": "what's next.",
+    "lede": "We build intelligent software, AI-powered systems and technology designed to move businesses forward.",
+    "contentsLabel": "Contents",
+    "positionLink": "The position",
+    "contactLink": "Write to us",
+    "where": "Belgium",
+    "channel": "Written contact",
+    "positionKicker": "Position",
+    "positionTitle": "Software we can own. A direction we can keep.",
+    "positionP1": "Northern Studio is a technology and product company. We design and build software whose direction, and whose intellectual property, we can stand behind.",
+    "positionP2": "Services — intelligent systems, platforms and automation — support early revenue. Products are the long-term core.",
+    "band": "Services carry the early revenue. Products are the long-term core.",
+    "principlesKicker": "Principles",
+    "principlesTitle": "Four lines we hold the work to.",
+    "principles": [
+      {
+        "title": "Ownership",
+        "text": "We build software we can stand behind, including the rights that come with it."
+      },
+      {
+        "title": "Clarity",
+        "text": "We say what a system does, where it stops, and what it does not promise."
+      },
+      {
+        "title": "Care",
+        "text": "Security, accessibility and maintenance are part of the work, not a later phase."
+      },
+      {
+        "title": "Ambition, in measure",
+        "text": "We aim far, and we ship in steps an organisation can actually carry."
+      }
+    ],
+    "researchKicker": "Research",
+    "researchTitle": "We keep open what we cannot yet build well enough.",
+    "researchText": "No list of papers, and no results we cannot show. A fixed place for the questions that keep the work sharp.",
+    "researchCta": "Read the direction",
+    "closeTitle": "A note is enough.",
+    "closeText": "Contact is in writing. No phone call, and no meeting required.",
+    "closeCta": "Go to contact",
+    "index": {
+      "ai": {
+        "title": "AI systems",
+        "text": "Intelligent systems, agents and applications that fit a real operation."
+      },
+      "software": {
+        "title": "Software",
+        "text": "Platforms and digital products, built as software that lasts."
+      },
+      "automation": {
+        "title": "Automation",
+        "text": "Workflows and integrations, with a trail a person can follow."
+      },
+      "products": {
+        "title": "Products",
+        "text": "Software we own. What has no name yet is a place, not a product."
+      }
+    }
+  },
+  "ai": {
+    "metaTitle": "AI systems · Northern Studio",
+    "metaDescription": "How Northern Studio approaches intelligent systems, AI agents and business software: with a purpose, boundaries and human control.",
+    "eyebrow": "AI systems",
+    "catalog": "01",
+    "title": "Intelligent systems, with limits.",
+    "lede": "We design AI as software: a purpose, a context, a way to steer it, and a place in the organisation that has to live with it.",
+    "figureLabel": "Fig. 01",
+    "figureTitle": "Layers of a system",
+    "figureIntro": "An intelligent system is a stack, not a loose model. Each layer has a job.",
+    "layers": [
+      { "title": "Interface", "text": "Where a person meets the system, and where it is clear what it will and will not do." },
+      { "title": "Orchestration", "text": "Which step follows which, which tools are available, and when to stop." },
+      { "title": "Models", "text": "The models that perform a task. They are a part, not the whole system." },
+      { "title": "Data and boundaries", "text": "Which information may be used, what stays out of reach, and how that is enforced." },
+      { "title": "Human control", "text": "Where a person decides, corrects, or holds an outcome back." }
+    ],
+    "sections": [
+      {
+        "title": "What we mean",
+        "paragraphs": [
+          "An intelligent system helps with work that is otherwise manual, slow or scattered: ordering text, proposing a next step, flagging an exception, walking someone through a procedure.",
+          "We start with that work. The model comes after, and only if it can carry the task. A demonstration is not a system."
+        ]
+      },
+      {
+        "title": "Approach",
+        "paragraphs": [
+          "We describe the purpose, the users, and the cases in which the system should stay quiet. Only then the architecture: data, integrations, evaluation, and the place of the person.",
+          "Going live is a decision, not a switch. We agree how the system will be watched once it is in real use."
+        ]
+      },
+      {
+        "title": "Agents",
+        "paragraphs": [
+          "An agent is software given a goal, allowed to use tools, and required to act inside limits. Those tools are ordinary systems: a file, an inbox, a database, an API.",
+          "Without an explicit stop, a record of what happened, and an owner in the organisation, an agent is not a tool. It is a risk. We build those three in."
+        ]
+      },
+      {
+        "title": "Inside a business",
+        "paragraphs": [
+          "Most of the value is not a chat on its own. It is a task that already exists: customer information, internal knowledge, operational follow-up, a product feature that becomes more capable.",
+          "We do not state savings or accuracy we cannot support in the specific context. What the system must not decide belongs in the design."
+        ]
+      }
+    ]
+  },
+  "software": {
+    "metaTitle": "Software · Northern Studio",
+    "metaDescription": "Engineering, platforms and digital products. Northern Studio builds software an organisation can carry, with ownership agreed in writing.",
+    "eyebrow": "Software",
+    "catalog": "02",
+    "title": "Software a business can carry.",
+    "lede": "We build platforms and digital products: from the first usable version to a system other people can understand, secure and continue.",
+    "figureLabel": "Fig. 02",
+    "figureTitle": "How a build proceeds",
+    "figureIntro": "Four moments. None of them is a phase we skip in order to look faster.",
+    "phases": [
+      { "title": "Frame", "text": "Purpose, users, limits, and what will deliberately not be built." },
+      { "title": "Shape", "text": "Structure, interface and the shape of the data, before the work spreads out." },
+      { "title": "Build", "text": "Implementation, tests, accessibility and security as part of the work." },
+      { "title": "Keep", "text": "Handover, documentation, and an agreement on who carries the software next." }
+    ],
+    "sections": [
+      {
+        "title": "Engineering",
+        "paragraphs": [
+          "We write software that stays readable: clear boundaries between parts, types where they catch mistakes early, and tests on the behaviour that must not break.",
+          "Security and accessibility are not a review at the end. A system only its author understands is not finished."
+        ]
+      },
+      {
+        "title": "Platforms and products",
+        "paragraphs": [
+          "A platform is the software a business sets its own operation on: accounts, permissions, data, integrations, an interface that follows the work.",
+          "A digital product is that same seriousness, with a user outside the project team. We design the first version small enough to be used, and solid enough to grow."
+        ]
+      },
+      {
+        "title": "Ownership",
+        "paragraphs": [
+          "For our own products, the software stays with Northern Studio. That is the core of the company.",
+          "On client work, intellectual property is agreed in writing. This website is not a contract, and it does not assign ownership by implication."
+        ]
+      }
+    ]
+  },
+  "automation": {
+    "metaTitle": "Automation · Northern Studio",
+    "metaDescription": "Intelligent workflows, integrations and operational automation that stay explainable, and that a person can stop.",
+    "eyebrow": "Automation",
+    "catalog": "03",
+    "title": "Automation that can still be explained.",
+    "lede": "We connect systems and take repetitive steps out of people's hands. The path stays something a person can follow, and stop.",
+    "figureLabel": "Fig. 03",
+    "figureTitle": "A workflow",
+    "figureIntro": "Four points. The last is not an appendix: without a trail, automation cannot be accounted for.",
+    "steps": [
+      { "title": "Signal", "text": "An event, or a piece of data arriving. Not everything that arrives is an instruction." },
+      { "title": "Rule", "text": "What may happen, what a person must see, and what must never run on its own." },
+      { "title": "System", "text": "The integration or the task: another system, a message, an update in a record." },
+      { "title": "Record", "text": "A trail of what happened, so someone can look it up afterwards." }
+    ],
+    "sections": [
+      {
+        "title": "Workflows",
+        "paragraphs": [
+          "A lot of operational work is a series of handoffs: a form, a check, an update in a second system, a note to the person who continues.",
+          "We automate that handoff where the rule is clear. Where it is not, the step stays with a person. That is a design choice, not a leftover."
+        ]
+      },
+      {
+        "title": "Integrations",
+        "paragraphs": [
+          "Systems rarely talk to each other on their own. We build the connection explicitly: which fields, which errors, what happens when the other side does not answer.",
+          "An integration that fails quietly is not automation. Errors stay visible to the person who has to repair them."
+        ]
+      },
+      {
+        "title": "Control",
+        "paragraphs": [
+          "Every automation has an owner and a way to be switched off. Permissions stay narrow: the system receives only the access the task needs.",
+          "We do not promise that manual work disappears. We promise that the work which remains is clearer, and that the automatic part can be explained."
+        ]
+      }
+    ]
+  },
+  "products": {
+    "metaTitle": "Products · Northern Studio",
+    "metaDescription": "Northern Studio's own software and SaaS. Reserved places, clearly marked in development or coming soon. No product names yet.",
+    "eyebrow": "Products",
+    "catalog": "04",
+    "title": "Places, not names yet.",
+    "lede": "Own software and SaaS platforms are the long-term core. Below are reserved places. They are not announced products.",
+    "honesty": "A place receives a name only when Northern Studio makes that product public. Until then there is no feature list, no launch and no customer story.",
+    "slotsLabel": "Reserved places",
+    "slots": [
+      {
+        "label": "Place 01",
+        "status": "In development",
+        "text": "Reserved for software the company owns. No name yet. In development means work is underway, not that it has been announced."
+      },
+      {
+        "label": "Place 02",
+        "status": "In development",
+        "text": "A second reserved place, also without a name and without a public description."
+      },
+      {
+        "label": "Place 03",
+        "status": "Coming soon",
+        "text": "Coming soon means only that the place is open. It is not a date and not a product."
+      }
+    ],
+    "interestTitle": "Ask to hear when there is news.",
+    "interestText": "A short note is enough. We write only about a product you asked to hear about."
+  },
+  "research": {
+    "metaTitle": "Research and innovation · Northern Studio",
+    "metaDescription": "The questions Northern Studio keeps open: reliable intelligent systems, products that stay simple, and automation a person can still control.",
+    "eyebrow": "Research and innovation",
+    "catalog": "05",
+    "title": "Questions we are keeping open.",
+    "lede": "This is not a lab, not a list of publications, and not a partnership. It is the short list of questions the next piece of work is held to.",
+    "inquiriesTitle": "Direction",
+    "inquiries": [
+      {
+        "title": "Reliability in use",
+        "text": "How does an intelligent system stay reliable once it is no longer a demonstration, but part of a real operation?"
+      },
+      {
+        "title": "Simplicity that can grow",
+        "text": "How does a product stay simple as its capabilities increase, instead of becoming a screen full of exceptions?"
+      },
+      {
+        "title": "Automation someone can control",
+        "text": "How does automation remain something the responsible person can still interrupt, without losing the trail?"
+      },
+      {
+        "title": "Software that lasts",
+        "text": "What infrastructure, documentation and ownership does software need in order to outlast the first delivery?"
+      }
+    ],
+    "closeTitle": "Nothing here is presented as a result.",
+    "closeText": "When there is something we can make public, it will appear in this place. Until then we describe the direction, not the outcome."
+  },
+  "about": {
+    "metaTitle": "About · Northern Studio",
+    "metaDescription": "Mission, vision and principles of Northern Studio, a technology and product company working from Belgium.",
+    "eyebrow": "About",
+    "catalog": "06",
+    "title": "A studio for work we can carry.",
+    "lede": "Northern Studio builds intelligent software, AI-powered systems and technology designed to move businesses forward. The long line is products whose ownership we can hold.",
+    "missionTitle": "Mission",
+    "mission": "To make software and systems that genuinely help a business forward, and that are solid enough to be owned — by us, or by a client when that is agreed in writing.",
+    "visionTitle": "Vision",
+    "vision": "An international technology and product company. Services fund the early work. Software we own sets the direction after that. We grow by what we can maintain, not by what we can announce.",
+    "principlesTitle": "Principles",
+    "principles": [
+      {
+        "title": "Ownership",
+        "text": "We treat code, design and data as something with an owner. For our own products, that is us. For client work, it is written down."
+      },
+      {
+        "title": "Clarity",
+        "text": "We describe limits with the same care as capabilities. A system that seems able to do everything has been poorly explained."
+      },
+      {
+        "title": "Care",
+        "text": "Security, accessibility, privacy and maintenance are part of the build. They are not offered as an option afterwards."
+      },
+      {
+        "title": "Ambition, in measure",
+        "text": "The work may reach far. The step we take has to be one an organisation can carry, understand and switch off."
+      }
+    ],
+    "scopeTitle": "Where we work",
+    "scope": "Northern Studio is a project in preparation, run by a private individual in Belgium. It is not yet a registered company. From there we work for organisations that look beyond a single local market. Figures, a team and a history will be published only once they are formally settled."
+  },
+  "contact": {
+    "metaTitle": "Contact · Northern Studio",
+    "metaDescription": "Write to Northern Studio. Contact is in writing, as a message or a business enquiry. No phone number and no meeting required.",
+    "eyebrow": "Contact",
+    "catalog": "07",
+    "title": "Write to us.",
+    "lede": "We reply in writing. A phone number or a meeting is not required to reach us.",
+    "messageTitle": "Message",
+    "messageText": "For a question, a note, or an introduction.",
+    "businessTitle": "Business enquiry",
+    "businessText": "For a possible engagement, a collaboration, or a question about future products."
+  },
+  "forms": {
+    "name": "Name",
+    "email": "Email",
+    "organisation": "Organisation",
+    "message": "Message",
+    "note": "Note",
+    "topic": "Subject",
+    "slot": "Place",
+    "optional": "optional",
+    "required": "required",
+    "topicPlaceholder": "Choose a subject",
+    "topics": {
+      "ai": "AI systems",
+      "software": "Software",
+      "automation": "Automation",
+      "products": "Products",
+      "other": "Something else"
+    },
+    "slots": {
+      "general": "No specific place",
+      "slot-01": "Place 01",
+      "slot-02": "Place 02",
+      "slot-03": "Place 03"
+    },
+    "messageSubmit": "Send the message",
+    "businessSubmit": "Send the enquiry",
+    "interestSubmit": "Keep me informed",
+    "sending": "Sending…",
+    "successTitle": "Received",
+    "successEmail": "Your message has been sent. We will reply in writing.",
+    "successAccepted": "Your message was validly received in this environment. Email delivery is not enabled here, so it was not forwarded.",
+    "errorSummary": "The form has not been sent. Check the marked fields.",
+    "rate": "Too many messages were sent. Try again later.",
+    "delivery": "The message could not be forwarded. Try again later.",
+    "invalidBanner": "The form was not sent. Check the required fields and try again.",
+    "privacy": "We use these details only to reply to your message.",
+    "privacyLink": "Privacy statement",
+    "interestPrivacy": "We use your email only for the product news you asked for. You can stop that later, in writing.",
+    "honeypot": "Website",
+    "errors": {
+      "required": "This field is required.",
+      "email": "Enter a valid email address.",
+      "short": "Write a little more, so we can reply.",
+      "long": "This is too long. Shorten it.",
+      "invalid": "Choose a valid value."
+    }
+  },
+  "privacy": {
+    "metaTitle": "Privacy · Northern Studio",
+    "metaDescription": "How Northern Studio handles information you submit through the forms on this website.",
+    "eyebrow": "Legal",
+    "title": "Privacy",
+    "lede": "This website collects little. What we ask for is used to reply in writing, or to send product news you requested yourself.",
+    "updated": "Last updated: November 2026.",
+    "sections": [
+      {
+        "title": "Controller",
+        "paragraphs": [
+          "The processing is carried out by a private individual in Belgium, under the project name Northern Studio. There is no company yet and no enterprise number.",
+          "A legal name, an address and a public email will be published on this page once they exist. Until then, reach the project through the contact form."
+        ]
+      },
+      {
+        "title": "Which data",
+        "paragraphs": [
+          "Through the contact form: name, email, the message, and — if you provide them — organisation and subject.",
+          "Through the interest form: email, the place you chose, and — if you provide them — name and a note.",
+          "The server may hold your IP address briefly in memory to limit misuse of the forms. It is not stored as a cookie and not attached to a profile. There is no analytics or advertising tracker."
+        ]
+      },
+      {
+        "title": "Why",
+        "paragraphs": [
+          "We process contact messages in order to reply. That is the legitimate interest of an ordinary business reply, or a step you take by sending the form.",
+          "We process an interest message only so we can send the product news you asked for. You can stop that in writing."
+        ]
+      },
+      {
+        "title": "How long",
+        "paragraphs": [
+          "We keep a message until the question has been handled, and no longer than that correspondence, or the news you asked for, requires.",
+          "An exact retention period will be set before commercial activity starts."
+        ]
+      },
+      {
+        "title": "Processors",
+        "paragraphs": [
+          "This site is built to be hosted by the provider of the production environment. The intended host is Vercel. A processing agreement should be in place before commercial activity starts.",
+          "When email delivery is enabled, the email provider processes the message on the project's instructions. The intended provider is Resend. Without keys, nothing is forwarded.",
+          "We do not sell data, and we do not pass it on for anyone else's advertising."
+        ]
+      },
+      {
+        "title": "Your rights",
+        "paragraphs": [
+          "You can ask for access, correction or deletion, and you can object to processing that relies on legitimate interest. Do that in writing, through the contact form, until a confirmed email address exists.",
+          "You can also lodge a complaint with the Belgian supervisory authority."
+        ]
+      }
+    ],
+    "complaintBefore": "The authority is the",
+    "complaintLink": "Belgian Data Protection Authority (Gegevensbeschermingsautoriteit)",
+    "complaintAfter": "."
+  },
+  "terms": {
+    "metaTitle": "Terms · Northern Studio",
+    "metaDescription": "Terms for using the Northern Studio website. This is not a proposal and not a contract.",
+    "eyebrow": "Legal",
+    "title": "Terms",
+    "lede": "These terms cover the use of northernstudio.be. They are a plain agreement about the site, not a contract for an engagement.",
+    "updated": "Last updated: November 2026.",
+    "sections": [
+      {
+        "title": "The site",
+        "paragraphs": [
+          "The site introduces Northern Studio and offers a way to make contact in writing. Nothing on these pages is a proposal, professional advice, or a promise of a result.",
+          "Product places are not an offer. A status of “in development” or “coming soon” does not announce a delivery date."
+        ]
+      },
+      {
+        "title": "Use",
+        "paragraphs": [
+          "You may read the site and use the forms for a genuine question. Automated abuse, sending someone else's data without a basis, or trying to disrupt the site, is not part of that.",
+          "We may temporarily block a form if too many messages arrive from the same address."
+        ]
+      },
+      {
+        "title": "Intellectual property",
+        "paragraphs": [
+          "The text, the name Northern Studio, the mark and the design of this site belong to Northern Studio, unless explicitly stated otherwise.",
+          "You may quote with attribution. You may not reproduce the site as if it were someone else's."
+        ]
+      },
+      {
+        "title": "Availability and liability",
+        "paragraphs": [
+          "We try to keep the site available and accurate. We do not guarantee that it will be uninterrupted or free of errors.",
+          "To the extent the law allows, this informational site is not a basis for loss that follows from merely using it. This text is not advice from a lawyer."
+        ]
+      },
+      {
+        "title": "Governing law",
+        "paragraphs": [
+          "The site is published by a private individual in Belgium, under the name Northern Studio, before a company exists. It is not an offer from a registered company. Belgian law is the setting in which this project is being prepared.",
+          "Questions about these terms go through the contact form."
+        ]
+      }
+    ]
+  },
+  "cookiesPage": {
+    "metaTitle": "Cookies · Northern Studio",
+    "metaDescription": "Northern Studio sets no cookies on this website and does not use a cookie banner.",
+    "eyebrow": "Legal",
+    "title": "Cookies",
+    "lede": "This website does not set cookies of its own. There is no cookie banner.",
+    "updated": "Last updated: November 2026.",
+    "sections": [
+      {
+        "title": "What is not here",
+        "paragraphs": [
+          "No analytics cookies, no advertising, no social plug-ins, and no cookie that remembers your language. The language is in the address: Dutch with no prefix, English under /en.",
+          "The language control in the navigation is an ordinary link to the other version of the same page."
+        ]
+      },
+      {
+        "title": "What a provider may do",
+        "paragraphs": [
+          "The hosting provider may keep technical logs, including IP addresses, to secure the site and to see abuse. Those are not cookies this site places in your browser.",
+          "Which provider that is, and how long logs are kept, will be confirmed before commercial activity starts. The intended host is Vercel."
+        ]
+      },
+      {
+        "title": "If that changes",
+        "paragraphs": [
+          "A strictly necessary cookie will be introduced only after this page has been updated. Tracking will not be added without it being visible here."
+        ]
+      }
+    ]
+  },
+  "accessibility": {
+    "metaTitle": "Accessibility · Northern Studio",
+    "metaDescription": "Northern Studio accessibility statement. This site is built toward WCAG 2.2 Level AA.",
+    "eyebrow": "Legal",
+    "title": "Accessibility",
+    "lede": "Northern Studio wants this website to be usable with a keyboard, a screen reader and without a mouse, and to stay readable when motion is reduced.",
+    "updated": "Last updated: November 2026.",
+    "sections": [
+      {
+        "title": "Aim",
+        "paragraphs": [
+          "We aim for the Web Content Accessibility Guidelines (WCAG) 2.2, Level AA. That is a target for this site, not a certificate from a third party."
+        ]
+      },
+      {
+        "title": "What is in place",
+        "paragraphs": [
+          "Semantic headings and landmarks, a skip link, visible focus, a label on every form field, errors in text, and a language switch that actually changes the page.",
+          "Motion is limited. Anyone who chooses reduced motion in their system gets no page movement and no line drawing in.",
+          "Colour is not the only carrier of a status. “In development” and “coming soon” are written in words."
+        ]
+      },
+      {
+        "title": "Known limits",
+        "paragraphs": [
+          "We are not aware of a barrier we have deliberately left in place. A generated image for social previews has a text alternative; the page itself carries the same title as text.",
+          "If you meet an obstacle, write to us. We treat that as an ordinary, serious request."
+        ]
+      }
+    ],
+    "contactCta": "Report a barrier",
+    "emailTodo": "There is no separate email address yet. Report a barrier through the contact form."
+  },
+  "notFound": {
+    "metaTitle": "Page not found · Northern Studio",
+    "kicker": "404",
+    "title": "This page does not exist.",
+    "text": "The address is wrong, or the page is no longer here.",
+    "home": "Back to the homepage",
+    "contact": "Write to us"
+  },
+  "error": {
+    "title": "Something went wrong.",
+    "text": "The page could not be shown. Try again, or write to us if it keeps happening.",
+    "retry": "Try again",
+    "home": "Back to the homepage"
+  }
+}
