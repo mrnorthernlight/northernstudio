@@ -12,12 +12,14 @@ export function ProductStage({
   return (
     <article className="stage">
       <div className="stage-copy">
-        <p className="kicker">{status}</p>
+        <div className="stage-kicker">
+          <p className="kicker">{status}</p>
+          <p className="stage-index" aria-hidden="true">
+            {String(index + 1).padStart(2, "0")}
+          </p>
+        </div>
         <h3 className="stage-title">{label}</h3>
         <p className="stage-text">{text}</p>
-        <p className="stage-index" aria-hidden="true">
-          {String(index + 1).padStart(2, "0")}
-        </p>
       </div>
       <div className="mock" aria-hidden="true">
         <div className="mock-bar">

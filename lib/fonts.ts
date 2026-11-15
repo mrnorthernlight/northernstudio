@@ -1,17 +1,29 @@
-import { Bricolage_Grotesque, Manrope } from "next/font/google";
+import localFont from "next/font/local";
 
-export const display = Bricolage_Grotesque({
-  subsets: ["latin"],
-  weight: ["500", "600", "700", "800"],
+/**
+ * Self-hosted variable fonts (latin). SIL Open Font License 1.1:
+ * assets/fonts/OFL-BricolageGrotesque.txt
+ * assets/fonts/OFL-Manrope.txt
+ * No next/font/google, so the production build does not download fonts.
+ */
+export const display = localFont({
+  src: "../assets/fonts/bricolage-grotesque-latin.woff2",
+  weight: "500 800",
+  style: "normal",
   variable: "--font-display",
   display: "swap",
+  adjustFontFallback: "Arial",
+  fallback: ["Arial", "sans-serif"],
 });
 
-export const body = Manrope({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+export const body = localFont({
+  src: "../assets/fonts/manrope-latin.woff2",
+  weight: "400 700",
+  style: "normal",
   variable: "--font-body",
   display: "swap",
+  adjustFontFallback: "Arial",
+  fallback: ["Arial", "sans-serif"],
 });
 
 export const fontClassName = `${display.variable} ${body.variable} ${body.className}`;

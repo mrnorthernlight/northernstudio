@@ -57,7 +57,7 @@ Checked intent: paper and muted on `#05060a` clear AA. Ice on the void is used f
 
 ### Typography
 
-Both families are loaded with `next/font` and served by the site. No third-party font host in the browser.
+Both families are self-hosted woff2 files loaded with `next/font/local`. The build does not fetch fonts. Licences are in `assets/fonts/`.
 
 - **Bricolage Grotesque** for display. Heavy weights, tight tracking, sizes up to about `8.4rem` in the hero. This is the voice of the page.
 - **Manrope** for interface and body.

@@ -79,12 +79,13 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         </div>
       </section>
 
-      <section id="positie" className="wrap" data-reveal>
-        <div className="band">
-          <p className="kicker">{t("positionKicker")}</p>
-          <p className="mt-6">{t("band")}</p>
-          <div className="mt-8 max-w-2xl space-y-4 text-lg leading-relaxed text-muted">
-            <p className="text-paper">{t("positionTitle")}</p>
+      <section id="positie" className="wrap py-8 md:py-16" data-reveal>
+        <div className="position">
+          <div>
+            <p className="kicker">{t("positionKicker")}</p>
+            <h2 className="position-title">{t("positionTitle")}</h2>
+          </div>
+          <div className="position-copy">
             <p>{t("positionP1")}</p>
             <p>{t("positionP2")}</p>
           </div>
